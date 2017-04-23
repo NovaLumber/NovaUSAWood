@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="CheckoutTables" targetNamespace="http://tempuri.org/CheckoutTables.xsd" xmlns:mstns="http://tempuri.org/CheckoutTables.xsd" xmlns="http://tempuri.org/CheckoutTables.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="CheckoutTables" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="CheckoutTables" msprop:Generator_DataSetName="CheckoutTables">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Address" msprop:Generator_UserTableName="Address" msprop:Generator_RowDeletedName="AddressRowDeleted" msprop:Generator_RowChangedName="AddressRowChanged" msprop:Generator_RowClassName="AddressRow" msprop:Generator_RowChangingName="AddressRowChanging" msprop:Generator_RowEvArgName="AddressRowChangeEvent" msprop:Generator_RowEvHandlerName="AddressRowChangeEventHandler" msprop:Generator_TableClassName="AddressDataTable" msprop:Generator_TableVarName="tableAddress" msprop:Generator_RowDeletingName="AddressRowDeleting" msprop:Generator_TablePropName="Address">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="cust_addr_id" msprop:Generator_UserColumnName="cust_addr_id" msprop:Generator_ColumnPropNameInRow="cust_addr_id" msprop:Generator_ColumnVarNameInTable="columncust_addr_id" msprop:Generator_ColumnPropNameInTable="cust_addr_idColumn" type="xs:int" />
+              <xs:element name="cust_id" msprop:Generator_UserColumnName="cust_id" msprop:Generator_ColumnPropNameInRow="cust_id" msprop:Generator_ColumnVarNameInTable="columncust_id" msprop:Generator_ColumnPropNameInTable="cust_idColumn" type="xs:int" />
+              <xs:element name="cust_addr_1" msprop:Generator_UserColumnName="cust_addr_1" msprop:Generator_ColumnPropNameInRow="cust_addr_1" msprop:Generator_ColumnVarNameInTable="columncust_addr_1" msprop:Generator_ColumnPropNameInTable="cust_addr_1Column" type="xs:string" minOccurs="0" />
+              <xs:element name="cust_addr_2" msprop:Generator_UserColumnName="cust_addr_2" msprop:Generator_ColumnPropNameInRow="cust_addr_2" msprop:Generator_ColumnVarNameInTable="columncust_addr_2" msprop:Generator_ColumnPropNameInTable="cust_addr_2Column" type="xs:string" minOccurs="0" />
+              <xs:element name="cust_state" msprop:Generator_UserColumnName="cust_state" msprop:Generator_ColumnPropNameInRow="cust_state" msprop:Generator_ColumnVarNameInTable="columncust_state" msprop:Generator_ColumnPropNameInTable="cust_stateColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="cust_phone" msprop:Generator_UserColumnName="cust_phone" msprop:Generator_ColumnPropNameInRow="cust_phone" msprop:Generator_ColumnVarNameInTable="columncust_phone" msprop:Generator_ColumnPropNameInTable="cust_phoneColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="cust_fax" msprop:Generator_UserColumnName="cust_fax" msprop:Generator_ColumnPropNameInRow="cust_fax" msprop:Generator_ColumnVarNameInTable="columncust_fax" msprop:Generator_ColumnPropNameInTable="cust_faxColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="cust_zip" msprop:Generator_UserColumnName="cust_zip" msprop:Generator_ColumnPropNameInRow="cust_zip" msprop:Generator_ColumnVarNameInTable="columncust_zip" msprop:Generator_ColumnPropNameInTable="cust_zipColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="cust_city" msprop:Generator_UserColumnName="cust_city" msprop:Generator_ColumnPropNameInRow="cust_city" msprop:Generator_ColumnVarNameInTable="columncust_city" msprop:Generator_ColumnPropNameInTable="cust_cityColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="cust_lastname" msdata:Caption="cust_firstname" msprop:Generator_UserColumnName="cust_lastname" msprop:Generator_ColumnPropNameInRow="cust_lastname" msprop:Generator_ColumnVarNameInTable="columncust_lastname" msprop:Generator_ColumnPropNameInTable="cust_lastnameColumn" type="xs:string" />
+              <xs:element name="cust_firstname" msprop:Generator_UserColumnName="cust_firstname" msprop:Generator_ColumnPropNameInRow="cust_firstname" msprop:Generator_ColumnVarNameInTable="columncust_firstname" msprop:Generator_ColumnPropNameInTable="cust_firstnameColumn" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Order" msprop:Generator_UserTableName="Order" msprop:Generator_RowDeletedName="OrderRowDeleted" msprop:Generator_RowChangedName="OrderRowChanged" msprop:Generator_RowClassName="OrderRow" msprop:Generator_RowChangingName="OrderRowChanging" msprop:Generator_RowEvArgName="OrderRowChangeEvent" msprop:Generator_RowEvHandlerName="OrderRowChangeEventHandler" msprop:Generator_TableClassName="OrderDataTable" msprop:Generator_TableVarName="tableOrder" msprop:Generator_RowDeletingName="OrderRowDeleting" msprop:Generator_TablePropName="Order">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="OrderId" msprop:Generator_UserColumnName="OrderId" msprop:Generator_ColumnVarNameInTable="columnOrderId" msprop:Generator_ColumnPropNameInRow="OrderId" msprop:Generator_ColumnPropNameInTable="OrderIdColumn" type="xs:int" />
+              <xs:element name="AddressId" msprop:Generator_UserColumnName="AddressId" msprop:Generator_ColumnVarNameInTable="columnAddressId" msprop:Generator_ColumnPropNameInRow="AddressId" msprop:Generator_ColumnPropNameInTable="AddressIdColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="CartId" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="CartId" msprop:Generator_ColumnVarNameInTable="columnCartId" msprop:Generator_ColumnPropNameInRow="CartId" msprop:Generator_ColumnPropNameInTable="CartIdColumn" type="xs:string" />
+              <xs:element name="Status" msprop:Generator_UserColumnName="Status" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:length value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CustomerId" msprop:Generator_UserColumnName="CustomerId" msprop:Generator_ColumnVarNameInTable="columnCustomerId" msprop:Generator_ColumnPropNameInRow="CustomerId" msprop:Generator_ColumnPropNameInTable="CustomerIdColumn" type="xs:int" />
+              <xs:element name="ShippingOption" msprop:Generator_UserColumnName="ShippingOption" msprop:Generator_ColumnPropNameInRow="ShippingOption" msprop:Generator_ColumnVarNameInTable="columnShippingOption" msprop:Generator_ColumnPropNameInTable="ShippingOptionColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="BillingAddressId" msprop:Generator_UserColumnName="BillingAddressId" msprop:Generator_ColumnPropNameInRow="BillingAddressId" msprop:Generator_ColumnVarNameInTable="columnBillingAddressId" msprop:Generator_ColumnPropNameInTable="BillingAddressIdColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="CreditCardId" msprop:Generator_UserColumnName="CreditCardId" msprop:Generator_ColumnVarNameInTable="columnCreditCardId" msprop:Generator_ColumnPropNameInRow="CreditCardId" msprop:Generator_ColumnPropNameInTable="CreditCardIdColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ReferralCode" msprop:Generator_UserColumnName="ReferralCode" msprop:Generator_ColumnVarNameInTable="columnReferralCode" msprop:Generator_ColumnPropNameInRow="ReferralCode" msprop:Generator_ColumnPropNameInTable="ReferralCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="residential" msprop:Generator_UserColumnName="residential" msprop:Generator_ColumnPropNameInRow="residential" msprop:Generator_ColumnVarNameInTable="columnresidential" msprop:Generator_ColumnPropNameInTable="residentialColumn" type="xs:int" default="1" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CreditCardInfo" msprop:Generator_UserTableName="CreditCardInfo" msprop:Generator_RowDeletedName="CreditCardInfoRowDeleted" msprop:Generator_RowChangedName="CreditCardInfoRowChanged" msprop:Generator_RowClassName="CreditCardInfoRow" msprop:Generator_RowChangingName="CreditCardInfoRowChanging" msprop:Generator_RowEvArgName="CreditCardInfoRowChangeEvent" msprop:Generator_RowEvHandlerName="CreditCardInfoRowChangeEventHandler" msprop:Generator_TableClassName="CreditCardInfoDataTable" msprop:Generator_TableVarName="tableCreditCardInfo" msprop:Generator_RowDeletingName="CreditCardInfoRowDeleting" msprop:Generator_TablePropName="CreditCardInfo">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CCType" msprop:Generator_UserColumnName="CCType" msprop:Generator_ColumnPropNameInRow="CCType" msprop:Generator_ColumnVarNameInTable="columnCCType" msprop:Generator_ColumnPropNameInTable="CCTypeColumn" type="xs:string" />
+              <xs:element name="CCNumber" msprop:Generator_UserColumnName="CCNumber" msprop:Generator_ColumnPropNameInRow="CCNumber" msprop:Generator_ColumnVarNameInTable="columnCCNumber" msprop:Generator_ColumnPropNameInTable="CCNumberColumn" type="xs:string" />
+              <xs:element name="CVV2" msprop:Generator_UserColumnName="CVV2" msprop:Generator_ColumnPropNameInRow="CVV2" msprop:Generator_ColumnVarNameInTable="columnCVV2" msprop:Generator_ColumnPropNameInTable="CVV2Column" type="xs:string" />
+              <xs:element name="Expires" msprop:Generator_UserColumnName="Expires" msprop:Generator_ColumnPropNameInRow="Expires" msprop:Generator_ColumnVarNameInTable="columnExpires" msprop:Generator_ColumnPropNameInTable="ExpiresColumn" type="xs:dateTime" />
+              <xs:element name="CCInfoId" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="CCInfoId" msprop:Generator_ColumnVarNameInTable="columnCCInfoId" msprop:Generator_ColumnPropNameInRow="CCInfoId" msprop:Generator_ColumnPropNameInTable="CCInfoIdColumn" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SubmittedOrderData" msprop:Generator_UserTableName="SubmittedOrderData" msprop:Generator_RowDeletedName="SubmittedOrderDataRowDeleted" msprop:Generator_RowChangedName="SubmittedOrderDataRowChanged" msprop:Generator_RowClassName="SubmittedOrderDataRow" msprop:Generator_RowChangingName="SubmittedOrderDataRowChanging" msprop:Generator_RowEvArgName="SubmittedOrderDataRowChangeEvent" msprop:Generator_RowEvHandlerName="SubmittedOrderDataRowChangeEventHandler" msprop:Generator_TableClassName="SubmittedOrderDataDataTable" msprop:Generator_TableVarName="tableSubmittedOrderData" msprop:Generator_RowDeletingName="SubmittedOrderDataRowDeleting" msprop:Generator_TablePropName="SubmittedOrderData">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="OrderId" msprop:Generator_UserColumnName="OrderId" msprop:Generator_ColumnVarNameInTable="columnOrderId" msprop:Generator_ColumnPropNameInRow="OrderId" msprop:Generator_ColumnPropNameInTable="OrderIdColumn" type="xs:int" />
+              <xs:element name="SubTotal" msprop:Generator_UserColumnName="SubTotal" msprop:Generator_ColumnVarNameInTable="columnSubTotal" msprop:Generator_ColumnPropNameInRow="SubTotal" msprop:Generator_ColumnPropNameInTable="SubTotalColumn" type="xs:decimal" />
+              <xs:element name="TaxCost" msprop:Generator_UserColumnName="TaxCost" msprop:Generator_ColumnVarNameInTable="columnTaxCost" msprop:Generator_ColumnPropNameInRow="TaxCost" msprop:Generator_ColumnPropNameInTable="TaxCostColumn" type="xs:decimal" />
+              <xs:element name="ShippingOptionId" msprop:Generator_UserColumnName="ShippingOptionId" msprop:Generator_ColumnVarNameInTable="columnShippingOptionId" msprop:Generator_ColumnPropNameInRow="ShippingOptionId" msprop:Generator_ColumnPropNameInTable="ShippingOptionIdColumn" type="xs:int" />
+              <xs:element name="ShippingOptionName" msprop:Generator_UserColumnName="ShippingOptionName" msprop:Generator_ColumnVarNameInTable="columnShippingOptionName" msprop:Generator_ColumnPropNameInRow="ShippingOptionName" msprop:Generator_ColumnPropNameInTable="ShippingOptionNameColumn" type="xs:string" />
+              <xs:element name="ShippingCost" msprop:Generator_UserColumnName="ShippingCost" msprop:Generator_ColumnVarNameInTable="columnShippingCost" msprop:Generator_ColumnPropNameInRow="ShippingCost" msprop:Generator_ColumnPropNameInTable="ShippingCostColumn" type="xs:decimal" />
+              <xs:element name="Total" msprop:Generator_UserColumnName="Total" msprop:Generator_ColumnVarNameInTable="columnTotal" msprop:Generator_ColumnPropNameInRow="Total" msprop:Generator_ColumnPropNameInTable="TotalColumn" type="xs:decimal" />
+              <xs:element name="SubmittedDate" msprop:Generator_UserColumnName="SubmittedDate" msprop:Generator_ColumnVarNameInTable="columnSubmittedDate" msprop:Generator_ColumnPropNameInRow="SubmittedDate" msprop:Generator_ColumnPropNameInTable="SubmittedDateColumn" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Address" />
+      <xs:field xpath="mstns:cust_addr_id" />
+    </xs:unique>
+    <xs:unique name="Order_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Order" />
+      <xs:field xpath="mstns:OrderId" />
+    </xs:unique>
+    <xs:unique name="CreditCardInfo_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:CreditCardInfo" />
+      <xs:field xpath="mstns:CCInfoId" />
+    </xs:unique>
+    <xs:unique name="SubmittedOrderData_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:SubmittedOrderData" />
+      <xs:field xpath="mstns:OrderId" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="CreditCardInfo_Order" msdata:parent="CreditCardInfo" msdata:child="Order" msdata:parentkey="CCInfoId" msdata:childkey="CreditCardId" msprop:Generator_UserRelationName="CreditCardInfo_Order" msprop:Generator_RelationVarName="relationCreditCardInfo_Order" msprop:Generator_UserChildTable="Order" msprop:Generator_UserParentTable="CreditCardInfo" msprop:Generator_ParentPropName="CreditCardInfoRow" msprop:Generator_ChildPropName="GetOrderRows" />
+      <msdata:Relationship name="Order_SubmittedOrderData" msdata:parent="Order" msdata:child="SubmittedOrderData" msdata:parentkey="OrderId" msdata:childkey="OrderId" msprop:Generator_UserRelationName="Order_SubmittedOrderData" msprop:Generator_RelationVarName="relationOrder_SubmittedOrderData" msprop:Generator_UserChildTable="SubmittedOrderData" msprop:Generator_UserParentTable="Order" msprop:Generator_ParentPropName="OrderRow" msprop:Generator_ChildPropName="GetSubmittedOrderDataRows" />
+      <msdata:Relationship name="Address_Order_Billing" msdata:parent="Address" msdata:child="Order" msdata:parentkey="cust_addr_id" msdata:childkey="BillingAddressId" msprop:Generator_UserRelationName="Address_Order_Billing" msprop:Generator_RelationVarName="relationAddress_Order_Billing" msprop:Generator_UserChildTable="Order" msprop:Generator_UserParentTable="Address" msprop:Generator_ParentPropName="AddressRowByAddress_Order_Billing" msprop:Generator_ChildPropName="GetOrderRowsByAddress_Order_Billing" />
+      <msdata:Relationship name="Address_Order_Shipping" msdata:parent="Address" msdata:child="Order" msdata:parentkey="cust_addr_id" msdata:childkey="AddressId" msprop:Generator_UserRelationName="Address_Order_Shipping" msprop:Generator_RelationVarName="relationAddress_Order_Shipping" msprop:Generator_UserChildTable="Order" msprop:Generator_UserParentTable="Address" msprop:Generator_ParentPropName="AddressRowByAddress_Order_Shipping" msprop:Generator_ChildPropName="GetOrderRowsByAddress_Order_Shipping" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

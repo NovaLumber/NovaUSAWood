@@ -1,0 +1,16 @@
+BEGIN:VCARD
+VERSION:2.1
+N:Bennett;Mike
+FN:Mike Bennett
+ORG:Nova USA Wood Products
+TITLE:Sales - Western US & Canada
+TEL;WORK;VOICE:(503) 419-6407
+TEL;CELL;VOICE:(971) 275-2889
+TEL;WORK;FAX:(216) 373-4931
+ADR;WORK;ENCODING=QUOTED-PRINTABLE:;;1022 NW Marshall=0D=0ASte. 480;Portland;OR;97209;United States of America
+LABEL;WORK;ENCODING=QUOTED-PRINTABLE:1022 NW Marshall=0D=0ASte. 480=0D=0APortland, OR 97209=0D=0AUnited States of=
+ America
+URL;WORK:http://www.novausawood.com
+EMAIL;PREF;INTERNET:mike@novausawood.com
+REV:20090210T025625Z
+END:VCARD

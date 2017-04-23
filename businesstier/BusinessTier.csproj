@@ -1,0 +1,491 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E397643D-D718-4785-8978-764A9EB10265}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BusinessTier</RootNamespace>
+    <AssemblyName>BusinessTier</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.0.30714, Culture=neutral, PublicKeyToken=b32731d11ce58905">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\PayPal ASP.NET SDK\bin\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="paypal_base, Version=4.3.5.0, Culture=neutral, PublicKeyToken=b37401294aaf5617">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\PayPal ASP.NET SDK\bin\paypal_base.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Accounts\AccountManager.cs" />
+    <Compile Include="Accounts\User.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="DataAccessLayer\Attributes.Designer.cs">
+      <DependentUpon>Attributes.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DataAccessLayer\brands.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>brands.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccessLayer\Cart.cs">
+      <DependentUpon>Cart.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccessLayer\Cart.Designer.cs">
+      <DependentUpon>Cart.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DataAccessLayer\CheckoutTables.cs">
+      <DependentUpon>CheckoutTables.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccessLayer\CheckoutTables.Designer.cs">
+      <DependentUpon>CheckoutTables.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DataAccessLayer\Colors.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Colors.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccessLayer\Customers.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Customers.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccessLayer\DataAccessLayer.cs" />
+    <Compile Include="DataAccessLayer\FiltersDS.cs">
+      <DependentUpon>FiltersDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccessLayer\FiltersDS.Designer.cs">
+      <DependentUpon>FiltersDS.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DataAccessLayer\Locations.cs">
+      <DependentUpon>Locations.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccessLayer\Locations.Designer.cs">
+      <DependentUpon>Locations.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DataAccessLayer\ProductList.cs">
+      <DependentUpon>ProductList.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccessLayer\ProductList.Designer.cs">
+      <DependentUpon>ProductList.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DataAccessLayer\ProductPhotos.cs">
+      <DependentUpon>ProductPhotos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccessLayer\ProductPhotos.Designer.cs">
+      <DependentUpon>ProductPhotos.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DataAccessLayer\PromoBlocks.cs">
+      <DependentUpon>PromoBlocks.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccessLayer\PromoBlocks.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PromoBlocks.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccessLayer\Promotions.cs">
+      <DependentUpon>Promotions.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccessLayer\Promotions.Designer.cs">
+      <DependentUpon>Promotions.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DataAccessLayer\RegionWeb.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RegionWeb.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccessLayer\RegionWebFlooring.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RegionWebFlooring.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccessLayer\Registrations.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Registrations.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccessLayer\RelatedProducts.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RelatedProducts.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccessLayer\Specials.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Specials.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccessLayer\Species.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Species.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccessLayer\WebDocuments.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WebDocuments.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccessLayer\zip.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>zip.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PayPal\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PayPal\PaypalApi.cs" />
+    <Compile Include="PayPal\PayPalSettings.cs" />
+    <Compile Include="PayPal\PayPalWrapper.cs" />
+    <Compile Include="PayPal\PayPalProfile.cs" />
+    <Compile Include="PayPal\Util.cs" />
+    <Compile Include="Products\LegacyFilter.cs" />
+    <Compile Include="Products\ProductDetails.cs" />
+    <Compile Include="Products\ProductManager.cs" />
+    <Compile Include="Products\FilteredProductList.cs" />
+    <Compile Include="Products\Product.cs" />
+    <Compile Include="Products\ProductFilter.cs" />
+    <Compile Include="Promotions\Promotion.cs" />
+    <Compile Include="Promotions\PromotionManager.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Receipts\Receipt.cs" />
+    <Compile Include="Shipping\ShippingCalculator.cs" />
+    <Compile Include="Shipping\ShippingOption.cs" />
+    <Compile Include="Shopping\CartSummary.cs" />
+    <Compile Include="Shopping\ShoppingCart.cs" />
+    <Compile Include="Textures.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Textures.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Utility\DataScrubber.cs" />
+    <Compile Include="Utility\Enums.cs" />
+    <Compile Include="Utility\SslHandler.cs" />
+    <Compile Include="Utility\Encryption.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utility\ErrorHandler.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="DataAccessLayer\Attributes.xsc">
+      <DependentUpon>Attributes.xsd</DependentUpon>
+    </None>
+    <None Include="DataAccessLayer\Attributes.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Attributes.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataAccessLayer\Attributes.xss">
+      <DependentUpon>Attributes.xsd</DependentUpon>
+    </None>
+    <None Include="DataAccessLayer\brands.xsc">
+      <DependentUpon>brands.xsd</DependentUpon>
+    </None>
+    <None Include="DataAccessLayer\brands.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>brands.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataAccessLayer\brands.xss">
+      <DependentUpon>brands.xsd</DependentUpon>
+    </None>
+    <None Include="DataAccessLayer\Cart.xsc">
+      <DependentUpon>Cart.xsd</DependentUpon>
+    </None>
+    <None Include="DataAccessLayer\Cart.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Cart.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataAccessLayer\Cart.xss">
+      <DependentUpon>Cart.xsd</DependentUpon>
+    </None>
+    <None Include="DataAccessLayer\CheckoutTables.xsc">
+      <DependentUpon>CheckoutTables.xsd</DependentUpon>
+    </None>
+    <None Include="DataAccessLayer\CheckoutTables.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CheckoutTables.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataAccessLayer\CheckoutTables.xss">
+      <DependentUpon>CheckoutTables.xsd</DependentUpon>
+    </None>
+    <None Include="DataAccessLayer\Colors.xsc">
+      <DependentUpon>Colors.xsd</DependentUpon>
+    </None>
+    <None Include="DataAccessLayer\Colors.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Colors.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataAccessLayer\Colors.xss">
+      <DependentUpon>Colors.xsd</DependentUpon>
+    </None>
+    <None Include="DataAccessLayer\Customers.xsc">
+      <DependentUpon>Customers.xsd</DependentUpon>
+    </None>
+    <None Include="DataAccessLayer\Customers.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Customers.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataAccessLayer\Customers.xss">
+      <DependentUpon>Customers.xsd</DependentUpon>
+    </None>
+    <None Include="DataAccessLayer\FiltersDS.xsc">
+      <DependentUpon>FiltersDS.xsd</DependentUpon>
+    </None>
+    <None Include="DataAccessLayer\FiltersDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FiltersDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataAccessLayer\FiltersDS.xss">
+      <DependentUpon>FiltersDS.xsd</DependentUpon>
+    </None>
+    <None Include="DataAccessLayer\Locations.xsc">
+      <DependentUpon>Locations.xsd</DependentUpon>
+    </None>
+    <None Include="DataAccessLayer\Locations.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Locations.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataAccessLayer\Locations.xss">
+      <DependentUpon>Locations.xsd</DependentUpon>
+    </None>
+    <None Include="DataAccessLayer\ProductList.xsc">
+      <DependentUpon>ProductList.xsd</DependentUpon>
+    </None>
+    <None Include="DataAccessLayer\ProductList.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProductList.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataAccessLayer\ProductList.xss">
+      <DependentUpon>ProductList.xsd</DependentUpon>
+    </None>
+    <None Include="DataAccessLayer\ProductPhotos.xsc">
+      <DependentUpon>ProductPhotos.xsd</DependentUpon>
+    </None>
+    <None Include="DataAccessLayer\ProductPhotos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProductPhotos.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataAccessLayer\ProductPhotos.xss">
+      <DependentUpon>ProductPhotos.xsd</DependentUpon>
+    </None>
+    <None Include="DataAccessLayer\PromoBlocks.xsc">
+      <DependentUpon>PromoBlocks.xsd</DependentUpon>
+    </None>
+    <None Include="DataAccessLayer\PromoBlocks.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>PromoBlocks.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataAccessLayer\PromoBlocks.xss">
+      <DependentUpon>PromoBlocks.xsd</DependentUpon>
+    </None>
+    <None Include="DataAccessLayer\Promotions.xsc">
+      <DependentUpon>Promotions.xsd</DependentUpon>
+    </None>
+    <None Include="DataAccessLayer\Promotions.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Promotions.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataAccessLayer\Promotions.xss">
+      <DependentUpon>Promotions.xsd</DependentUpon>
+    </None>
+    <None Include="DataAccessLayer\RegionWeb.xsc">
+      <DependentUpon>RegionWeb.xsd</DependentUpon>
+    </None>
+    <None Include="DataAccessLayer\RegionWeb.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RegionWeb.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataAccessLayer\RegionWeb.xss">
+      <DependentUpon>RegionWeb.xsd</DependentUpon>
+    </None>
+    <None Include="DataAccessLayer\RegionWebFlooring.xsc">
+      <DependentUpon>RegionWebFlooring.xsd</DependentUpon>
+    </None>
+    <None Include="DataAccessLayer\RegionWebFlooring.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RegionWebFlooring.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataAccessLayer\RegionWebFlooring.xss">
+      <DependentUpon>RegionWebFlooring.xsd</DependentUpon>
+    </None>
+    <None Include="DataAccessLayer\Registrations.xsc">
+      <DependentUpon>Registrations.xsd</DependentUpon>
+    </None>
+    <None Include="DataAccessLayer\Registrations.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Registrations.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataAccessLayer\Registrations.xss">
+      <DependentUpon>Registrations.xsd</DependentUpon>
+    </None>
+    <None Include="DataAccessLayer\RelatedProducts.xsc">
+      <DependentUpon>RelatedProducts.xsd</DependentUpon>
+    </None>
+    <None Include="DataAccessLayer\RelatedProducts.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RelatedProducts.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataAccessLayer\RelatedProducts.xss">
+      <DependentUpon>RelatedProducts.xsd</DependentUpon>
+    </None>
+    <None Include="DataAccessLayer\Specials.xsc">
+      <DependentUpon>Specials.xsd</DependentUpon>
+    </None>
+    <None Include="DataAccessLayer\Specials.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Specials.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataAccessLayer\Specials.xss">
+      <DependentUpon>Specials.xsd</DependentUpon>
+    </None>
+    <None Include="DataAccessLayer\Species.xsc">
+      <DependentUpon>Species.xsd</DependentUpon>
+    </None>
+    <None Include="DataAccessLayer\Species.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Species.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataAccessLayer\Species.xss">
+      <DependentUpon>Species.xsd</DependentUpon>
+    </None>
+    <None Include="DataAccessLayer\WebDocuments.xsc">
+      <DependentUpon>WebDocuments.xsd</DependentUpon>
+    </None>
+    <None Include="DataAccessLayer\WebDocuments.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WebDocuments.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataAccessLayer\WebDocuments.xss">
+      <DependentUpon>WebDocuments.xsd</DependentUpon>
+    </None>
+    <None Include="DataAccessLayer\zip.xsc">
+      <DependentUpon>zip.xsd</DependentUpon>
+    </None>
+    <None Include="DataAccessLayer\zip.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>zip.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataAccessLayer\zip.xss">
+      <DependentUpon>zip.xsd</DependentUpon>
+    </None>
+    <None Include="PayPal\EWPcert\sdk-ewp.p12" />
+    <None Include="PayPal\EWPcert\sdk-seller.p12" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Biz.Accounts.cd" />
+    <None Include="Biz.PayPal.cd" />
+    <None Include="Biz.Products.cd" />
+    <None Include="Biz.Promotions.cd" />
+    <None Include="Biz.Receipts.cd" />
+    <None Include="Biz.Shipping.cd" />
+    <None Include="Biz.Shopping.cd" />
+    <None Include="Biz.Utility.cd" />
+    <None Include="Textures.xsc">
+      <DependentUpon>Textures.xsd</DependentUpon>
+    </None>
+    <None Include="Textures.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Textures.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Textures.xss">
+      <DependentUpon>Textures.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PayPal\EWPcert\readme.txt" />
+    <Content Include="PayPal\EWPcert\sandbox_cert_pem.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

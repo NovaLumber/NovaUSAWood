@@ -1,0 +1,1133 @@
+/* Reset CSS */
+@import url("reset.css");
+/*
+
+Colors:
+
+The green in the logo, nav hover state and sidenav header: 
+#3f5410;
+
+Hover over lighter green:
+#4f6521;
+
+*/
+
+a,
+a:hover,
+a:visited,
+a:active {
+	color: #3f5410;
+	text-decoration: none;
+	font-weight:bold;
+}
+
+a:hover {
+	color: #4f6521;
+}
+
+html,
+body {
+	height: 100%;
+	font-family: verdana, arial, helvetica, sans-serif;
+}
+
+#bodyPhoto 
+{
+	height: 100%;	
+}
+
+#innerwrapper {
+    text-align: left;
+    background: url(background-grey-grid.png) top left repeat;
+    min-height: 98%; /* kind of a hack to get footer to show - SG */
+}
+
+h1 {
+    font-family: 'Merriweather', serif;
+	font-size: 14px;
+	font-weight: bold;
+	margin: 10px 0;
+	line-height: 28px;
+}
+
+h2 {
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	line-height: 19px;
+}
+
+h3,h4 {
+	font-family: verdana, arial, helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    line-height: 16px;
+}
+
+h5 {
+	font-family: 'Cabin', serif;
+	font-size: 15px;
+  	font-style: normal;
+  	font-weight: 400;
+  	text-decoration: none;
+  	word-spacing: .2em;
+  	line-height: 1.5;
+	margin-bottom: 1.5em;
+}
+
+ul,
+ol,
+dl {
+    margin-bottom: 10px;
+}
+
+ol li {
+    list-style-type: decimal;
+    margin-left: 30px;
+    padding-top: 2px;
+}
+
+body, p, li, table, tr, td {
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 15px;
+}
+
+p {
+	margin-bottom: 1.5em;
+}
+
+dl dd, dl dt 
+{
+	padding: 20px, 0px, 10px, 0px;
+}
+
+strong {
+	font-weight: bold;
+}
+
+
+.align-left {
+    float: left;
+}
+
+.align-right {
+    float: right;
+}
+
+.clearfix {
+	clear: both;
+}
+
+.button, input[type="submit"]  {	
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: lowercase;
+	text-shadow: 0 -1px 1px rgba(0,0,0,0.3);	
+	line-height: normal !important;
+	color: #fff !important;
+	position: relative;
+	display: inline-block;	
+	cursor: pointer;
+	background: #405611 url(graphic-button-background.png) repeat-x;
+	margin: 10px 0;	
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+	box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+	padding: 4px 10px 5px 10px;
+	border: 1px solid rgba(0,0,0,.2);		
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.button:hover, input[type="submit"]:hover {
+	background-color: #587b0e !important; /* orig colors brown: #34250d  green: #405611 */
+}
+
+.button-small, input[type="submit"]  {	
+	font-size: 11px;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: lowercase;
+	text-shadow: 0 -1px 1px rgba(0,0,0,0.3);	
+	line-height: normal !important;
+	color: #fff !important;
+	position: relative;
+	display: inline-block;	
+	cursor: pointer;
+	background: #405611 url(graphic-button-background.png) repeat-x;
+	margin: 8px 0;	
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+	box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+	padding: 3px 8px 3px 8px;
+	border: 1px solid rgba(0,0,0,.2);		
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.button-small:hover, input[type="submit"]:hover {
+	background-color: #587b0e !important; /* orig colors brown: #34250d  green: #405611 */
+}
+
+.button-new, input[type="submit"]  {	
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	/*text-transform: lowercase; */
+	text-shadow: 0 -1px 1px rgba(0,0,0,0.3);	
+	line-height: normal !important;
+	color: #fff !important;
+	position: relative;
+	display: inline-block;	
+	cursor: pointer;
+	background: #405611 url(graphic-button-background.png) repeat-x;
+	margin: 8px 0;	
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+	box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+	padding: 4px 10px 5px 10px;
+	border: 1px solid rgba(0,0,0,.2);		
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.button-new:hover, input[type="submit"]:hover {
+	background-color: #587b0e !important; /* orig colors brown: #34250d  green: #405611 */
+}
+
+.button-new-small, input[type="submit"]  {	
+	font-size: 11px;
+	font-weight: bold;
+	text-decoration: none;
+	/*text-transform: lowercase; */
+	text-shadow: 0 -1px 1px rgba(0,0,0,0.3);	
+	line-height: normal !important;
+	color: #fff !important;
+	position: relative;
+	display: inline-block;	
+	cursor: pointer;
+	background: #405611 url(graphic-button-background.png) repeat-x;
+	margin: 8px 0;	
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+	box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+	padding: 3px 8px 3px 8px;
+	border: 1px solid rgba(0,0,0,.2);		
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.button-new-small:hover, input[type="submit"]:hover {
+	background-color: #587b0e !important; /* orig colors brown: #34250d  green: #405611 */
+}
+
+
+.horses {
+	background: #555 url(background-horses.jpg) center center no-repeat fixed;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+	
+.cherries {
+	background: #555 url(cherries.jpg) center center no-repeat fixed;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.grapes {
+	background: #555 url(grapes.jpg) center center no-repeat fixed;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.mud {
+	background: #555 url(mud.jpg) top center no-repeat fixed;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.boots {
+	background: #555 url(background-boots-1.jpg) center center no-repeat fixed;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.map {
+	background: #555 url(map-europe.jpg) center center no-repeat fixed;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.forest {
+	background: #555 url(forest.jpg) center center no-repeat fixed;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.martini {
+	background: #555 url(background-martini-1.jpg) center center no-repeat fixed;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.black {
+    background: #000;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.dogs {
+	background: #555 url(dogs-playing-poker.jpg) center center no-repeat fixed;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.pie {
+	background: #555 url(background-pie-1.jpg) center center no-repeat fixed;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.child {
+	background: #555 url(background-child-2.jpg) center center no-repeat fixed;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.deck {
+	background: #555 url(background-cumaru-deck.jpg) center center no-repeat fixed;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.ipe-deck {
+	background: #555 url(background-ipe-deck.jpg) center center no-repeat fixed;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.angelim-deck {
+	background: #555 url(background-angelim.jpg) center center no-repeat fixed;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.trailer {
+	background: #555 url(purdy-sit.jpg) center center no-repeat fixed;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.shoe {
+	background: #555 url(background-shoe.jpg) center center no-repeat fixed;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.tube-boy {
+	background: #555 url(background-tube-boy.jpg) center center no-repeat fixed;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.lumber-yard {
+	background: #555 url(background-lumber-yard.jpg) center center no-repeat fixed;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.batu-house {
+	background: #555 url(background-batu-house.jpg) center center no-repeat fixed;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#pageContent {
+	width: 970px;
+	margin: 0 auto;
+	text-align: left;
+	padding-bottom: 30px;
+}
+
+.leftColumn {
+	width: 48%;
+	float: left;
+}
+
+.rightColumn {
+	width: 48%;
+	float: right;
+}
+
+.leftColumn img,
+.rightColumn img
+{
+    float:right;
+    width:340px;
+    padding:20px;
+}
+
+#mainWithSideBar a {
+	font-weight: bold;
+}
+#mainWithSideBar img
+{
+    /*padding: 20px;*/
+    /*width: 200px;*/
+}
+
+.species-paragraph
+{
+    width:450px;
+    padding:10px 0px 0px 0px;
+}
+.species-ul
+{
+    padding: 10px 0px 10px 0px; 
+    width:450px;
+}
+.species-image
+{
+    float:right; width:200px; padding:10px 20px 0px 30px;
+}
+/* ******************    HEADER    *********************** */
+
+
+#header {
+	background: #000;
+	height: 60px;
+}
+
+#headerContent {
+	width: 970px;
+	margin: 0 auto;
+}
+	
+#logo { 
+	padding-top: 5px;
+	width: 100px;
+	float: left;
+}
+
+#logo img {
+    height: 50px;
+}
+
+
+
+/* ********************   Top Nav Bar    ****************** */
+
+#nav {
+        float: right;
+        color: #fff;
+        font-family: 'Merriweather', serif;
+        font-size: 13px;
+        font-weight: normal;
+        text-transform: uppercase;
+        line-height: 1.2;
+}
+
+#nav li a {
+        color: #fff;
+        text-decoration: none;
+        border-left: 1px solid #363636;
+        padding: 0 15px;
+        margin: 0;
+        line-height: 60px;
+}
+
+#nav li:last-child a {
+        border-right: 1px solid #363636;
+}
+
+#nav li li a,
+#nav li li li a,
+#nav li li li li a {
+        line-height: 14px;
+        border: 0px !important;
+        display: block;
+        background: #000;
+        padding: 5px 15px;
+        font-size: 11px;
+        font-weight: normal;
+        text-transform: none;
+        text-align: left;
+}
+
+#nav li ul,
+#nav li li ul,
+#nav li li li ul,
+#nav li li li li ul {
+        background: #000;
+        border-bottom: 8px solid #000;
+        -moz-border-radius: 0 0 8px 8px;
+        -webkit-border-radius: 0 0 8px 8px;
+        -khtml-border-radius: 0 0 8px 8px;
+        border-radius: 0 0 8px 8px;
+}
+
+#nav li a:hover,
+#nav li a.sfhover,
+#nav a.active {
+        background: #6b752e;
+}
+
+
+
+/* ****************   Side Bar  ******************* */
+
+#sideColumn {
+	width: 203px;
+	float: right;
+	background: url(graphic-subnav-triangle.png) bottom left no-repeat;
+	padding-bottom: 64px;
+}
+
+#sideColumn h2,
+#sideColumn h3 {
+    background-color: #fff;
+    font-family: 'Merriweather', serif;
+    font-size: 23px;
+	padding: 10px;
+	line-height: 27px;
+    color: #3f5410;
+	margin: 0;
+}
+
+#subNav {
+	background: #fff;
+	font-family: helvetica, arial, sans-serif;
+	font-size: 12px;
+	color: #3c3c3c;
+	line-height: 16px;
+}
+
+#subNav li {
+	border-top: 1px solid #bebdbb;
+	font-weight: bold;
+}
+
+#subNav li ul {
+}
+
+#subNav a {
+    color: #3c3c3c;
+    text-decoration: none;
+    display: block;
+    padding: 4px 12px;
+    border-left: 10px solid #fff;
+}
+
+#subNav a:hover, 
+#subNav a.active {
+    color: #000;
+    border-color: #9fa987;
+}
+
+#subNav li li,
+#subNav li li a {
+	color: #646464;
+	font-weight: normal;
+}
+
+#mainWithSideBar,
+#mainNoSideBar {
+	padding: 13px;
+	width: 741px;
+	background: rgb(255,255,255);
+	background: rgba(255,255,255,0.8);
+ 	-moz-box-shadow: 0px 0px 12px #000;
+  	-webkit-box-shadow: 0px 0px 12px #000;
+  	box-shadow: 0px 0px 12px #000;
+}
+
+#mainNoSideBar {
+	width: 960px;
+}
+
+#mainWithSideBar ul {
+}
+
+#mainWithSideBar ul.bullets li {
+    list-style-type: disc;
+    margin-left: 30px;
+    padding: 0 0 2px 0;
+}
+
+#footer {
+	background-color:Black;
+	color:#aaa;
+	text-align:center;
+	padding: 5px 0px 5px 0px;
+	margin:0;
+}
+#footer p {
+	font-size:10px;
+	padding:0;
+	margin:0;
+}
+/* **********************  PRODUCT PAGE  ******************** */
+
+
+#product-images {
+	float: left;
+	width: 620px;
+}
+
+#product-images img {
+	border: 1px solid #000;
+}
+
+#product-page #product-images li {
+	float: left;	
+}
+
+#product-page #product-images li img {
+	width: 614px;
+	height: 614px;
+	margin: 1px 5px 0px 0px;
+}
+
+#product-page #product-images li a img {
+	width: 117px;
+	height: 117px;
+}
+
+#productDescription {
+	float: right;
+	width: 325px;
+}
+
+#productDescription li {
+	margin: 4px 0;
+}
+
+#productDescription ul {
+	margin: 10px 0 20px 0;
+}
+/* **********************  CATALOG PAGE  ******************** */
+
+#catalogPage {}
+
+#catalogPage #product-list {  /* the product container */
+    width: 470px;
+    float: right;
+}
+
+#catalogPage .productItem {
+    margin-bottom: 20px;
+}
+
+#catalogPage .productItem p {
+    margin-bottom: 0;
+    width: 330px;
+}
+    
+#catalogPage #product-list ul {
+    width: 330px;
+}
+
+#catalogPage #product-list li {
+    margin-bottom: 2px;
+}
+
+#catalogPage #product-list img {
+    width: 125px;
+    height: 125px;
+	border: 1px solid #000;
+    margin: 0px 10px 0px 0px;
+    padding: 0px;
+}
+
+/* Floor Finder image replacement */
+.h1FloorFinder {
+    clear: left;
+    background: url(header-floor-finder-2.png);
+    height: 46px;
+    text-indent: -9999px;
+}
+
+/* Deck Finder image replacement */
+.h1DeckFinder {
+    clear: left;
+    background: url(header-deck-finder-2.png);
+    height: 46px;
+    text-indent: -9999px;
+}
+
+
+#catalogPage #product-list h1 {
+    background: transparent;
+    height: auto;
+    text-indent: 0px;
+}
+
+
+
+
+
+/*  ****************  PRODUCT FILTER  ******************* */
+
+#product-filter {
+        float: left;
+        width: 195px;
+        background: #fff;
+        padding: 20px 20px 20px 20px;
+        font-family: verdana, arial, helvetica, sans-serif;
+}
+
+#product-filter .CrumbManager {  /* Your Current Filter header */
+        font-family: verdana, arial, helvetica, sans-serif;
+        font-size: 12px;
+        line-height: 15px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #000;
+}
+
+#product-filter .CrumbManager h3 {
+        border-top: 0;
+        margin: 0;
+        padding: 0 0 10px 0;
+}
+
+h3, #product-filter ul {
+        font-weight: bold;
+        font-size: 12px;
+        text-transform: uppercase;
+}
+
+#product-filter ul {
+        margin-top: 10px;
+}
+
+#product-filter ul ul {
+        font-weight: normal;
+        text-transform: none;
+        border-bottom: 1px solid #ccc;
+        margin: 10px 0;
+        padding: 0 0 10px 0;
+}
+
+div#product-filter ul li:first-child h3 {
+        border-top: 0px;
+}
+#product-filter ul li ul li,
+#product-filter ul li ul li a
+{
+	font-size:10px;
+	font-weight:normal;
+}
+
+
+
+/* ****************  HOMEPAGE  ***************** */
+
+#homepage {
+        width: 970px;
+        margin: 18px 0;
+}
+
+#hardwoodFlooringBox,
+#exteriorDeckingBox,
+#ourCommitmentBox,
+#floorFinderBox,
+#emailSignUpBox
+{
+        padding: 4px;
+        width: 741px;
+        background: rgb(255,255,255);
+        background: rgba(255,255,255,0.8);
+        -moz-box-shadow: 0px 0px 12px #000;
+        -webkit-box-shadow: 0px 0px 12px #000;
+        box-shadow: 0px 0px 12px #000;
+}
+
+#floorFinderBox,
+#emailSignUpBox
+{
+	padding: 0px;
+	overflow:hidden;
+	width: 968px;
+	margin-top: 17px;
+	float: left;		
+}
+
+#floorFinderTitle 
+{
+	padding: 8px 8px 8px 14px;
+	margin: 0px 0px 0px 0px;
+	float:left;
+}
+
+#finderSelection 
+{
+	width: 555px;
+	float:right;
+	padding: 0px 0px 0px 0px;
+	margin: 13px 9px 0px 0px;
+}
+
+#finderSelection p
+{
+	float:left;
+	padding-left: 3px;
+}
+
+#hardwoodFlooringBox {
+        width: 467px;
+        margin-right: 17px;
+        float: left;
+        min-height: 670px;
+}
+
+#exteriorDeckingBox {
+        width: 467px;
+        margin-right: 0px;
+        float: left;
+        min-height: 670px;
+}
+
+#ourCommitmentBox {
+        width: 270px;
+        float: right;
+        min-height: 670px;
+}
+
+#homepage .boxContent {
+        padding: 5px;
+}
+
+#homepage .boxContent p {
+}
+
+#homepage a.expander,
+#mainWithSideBar a.expander {
+        color: #3f5410;
+        text-transform: uppercase;
+        font-size: 12px;
+        background: url(button-expand-arrow.png) 0px 1px no-repeat;
+        padding-left: 18px;
+        display: block;
+}
+
+#homepage a.open 
+#mainWithSideBar a.open {
+        background: url(button-expand-arrow-active.png) 0px 1px no-repeat;
+}
+
+
+/* ***************   WOOD TYPES PAGE  ******************* */
+
+#woodTypesList h1 {
+    clear: left;
+}
+
+#woodTypesList .woodTypeImage {
+    float: left;
+    width: 220px;
+}
+
+#woodTypesList .woodTypeImage img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+#woodTypesList .woodTypeDescription {
+    width: 480px;
+    margin-left: 230px;
+    margin-bottom: 20px;
+}
+
+#woodTypesList .woodTypeDescription li {
+    margin: 5px 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+
+/* ***************   ELEMENTAL PAGES  ******************* */
+
+.elemental .align-left {
+        width: 360px;
+        width: 320px;
+        float: left;
+        padding: 0 20px;
+}
+
+.elemental .align-left p { 
+}
+
+.elemental .align-left img {
+/*
+    width: 320px;
+    height: 70px;
+    float: left;
+    padding: 0 15px 10px 0;
+    */
+}
+
+.elemental .align-right {
+        width: 370px;
+        float: right;
+        text-align: center;
+}
+
+
+
+/* Steve re-added so footer badges can be used */
+
+#lowerBanner 
+{
+	float:left;
+	width: 960px;
+	padding:20px 0px 30px 20px;
+}
+
+#lowerBanner li
+{
+	float:left;
+	width:153px;
+	padding: 0px 0px 0px 0px;
+}
+.centeredImage
+{
+    text-align:center;
+    margin-top:0px;
+    margin-bottom:0px;
+    padding:0px;
+}
+
+/* Steve added for Wood Property Charts */
+#hardness-page 
+{
+    margin:0px;
+    padding:30px;
+    background-color: #E8E4D6;
+	width: 707px;
+ 	-moz-box-shadow: 0px 0px 12px #000;
+  	-webkit-box-shadow: 0px 0px 12px #000;
+  	box-shadow: 0px 0px 12px #000;
+}
+#hardness-page h1 
+{
+    font-size:24px;
+}
+#hardness-page p
+{
+        font-size:14px;
+        line-height:18px;
+        margin-right:22px;
+}
+
+.chartBar 
+{
+	background-color:#B2A97E; 
+	height:18px; 
+	margin-bottom:6px;
+    padding-top:3px;
+}
+.chartBar a
+{
+	color:#000;
+	padding-left:8px;
+}
+.chartBar a:hover
+{
+	color:#FFF;
+}
+
+/* Steve added to clean up old pages */
+
+#oldPage 
+{
+}
+
+#oldPage img
+{
+	max-width: 242px;
+}
+
+#oldPage p
+{
+	padding:5px 0px 10px 0px;
+	margin:0px 0px 0px 0px;
+}
+
+#oldPage h2,
+#oldPage h3,
+#oldPage h4
+{
+	padding:10px 0px 0px 0px;
+	margin:0px 0px 0px 0px;
+}
+
+#oldPage ul
+{
+	padding:0px 0px 0px 0px;
+	margin:0px 0px 0px 0px;
+}
+ 
+#oldPage dd
+{
+	padding:10px 0px 0px 0px;
+	margin:0px 0px 0px 0px;
+} 
+
+
+/* Contact page */
+
+.locationDetails {
+	width:960px;
+	border-top: solid 1px black;
+	margin:0px;
+	padding:0px;
+	clear:both;
+}
+.locationDetails h2 {	
+	width:960px;
+	padding-top:10px;
+	margin-bottom: 0px;
+}
+
+.locationDetails p {	
+	padding-top:10px;
+}
+
+.contactMap 
+{
+	float:left;
+	padding:0px 0px 10px 0px;
+}
+.contact_info
+{
+	padding: 10px;
+	width: 958px;
+	clear:both;
+}
+.contact_name
+{
+	width:340px;
+	float:left;
+}
+.contact_email
+{
+	width:210px;
+	float:left;
+}
+.contact_phone
+{
+	width:270px;
+	float:left;
+}
+
+/* Steve Added from Old CSS -------------------------- gallery -------------------------*/
+#gallery
+{
+	width:960px;
+	padding:0px 0px 0px 11px;
+	margin:0px 0px 0px 0px;
+}
+#gallery ul li
+{
+	float:left;
+	font-size: 0.8em;
+	width:320px;
+	padding-left:0px;
+}
+#gallery ul li p
+{
+	padding: 0;
+}
+#gallery ul li h3
+{
+	padding: 15px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+}
+.gallery-photo
+{
+	padding-left:0px;
+	padding-right:3px;
+	padding-bottom:0px;	
+	padding-top:0px;
+}
+#article img
+{
+    width:740px;
+    margin:0px;
+    padding:0px 0px 10px 0px;
+}
+#photogallery
+{
+	width:960px;
+    padding:5px;
+}
+#photogallery img
+{
+	padding:5px;
+    height:200px;
+}
+.emailsignup
+{
+	padding: 5px 10px 15px 15px;
+	overflow:hidden;
+	width: 968px;
+    height: 40px;
+	margin-top: 5px;
+	float: left;		
+}
+.emailsignup p 
+{
+    padding: 0;
+    margin: 0;
+    color: black;
+    font-size:12px;
+}

@@ -1,0 +1,35 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="UIMasterPage-Plain.master.cs" Inherits="WebUI.UIMasterPage_Plain" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" runat="server" id="html">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      
+    <style type="text/css" media="screen">
+        @import/**/"theme/designer.css";
+    </style> 
+
+    <script type="text/javascript" src="scripts/jquery-1.4.4.js"></script>
+    <script type="text/javascript" src="scripts/jquery.tools.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.cookie.js"></script>
+    <script type="text/javascript" src="http://dev.jquery.com/view/trunk/plugins/color/jquery.color.js"></script>
+    <script type="text/javascript" src="scripts/designer.js"></script>
+    
+</head>
+<body id="body" runat="server">
+    <form id="MasterPageForm" runat="server">
+        <asp:ContentPlaceHolder id="Content" runat="server" />
+    </form>        
+</body>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-3731904-2");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</html>

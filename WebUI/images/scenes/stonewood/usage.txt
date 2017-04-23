@@ -1,0 +1,3 @@
+124 x 124 with c extension
+
+1024 min for full size

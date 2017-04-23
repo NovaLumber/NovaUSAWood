@@ -1,0 +1,8 @@
+-Units of measure
+
+-Determine frieght class of an order
+	--Stored procedures to change to add frieght class to the cart lines stuff
+		--SP_GetCart, always returns 55 now
+
+-Determine port of origin of a shipping item
+	--Created SP_GetCartShippingPoint, includes dummy now

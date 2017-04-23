@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PromoBlocks" targetNamespace="http://tempuri.org/PromoBlocks.xsd" xmlns:mstns="http://tempuri.org/PromoBlocks.xsd" xmlns="http://tempuri.org/PromoBlocks.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PromoBlocks" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="PromoBlocks" msprop:Generator_DataSetName="PromoBlocks">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PromoBlock" msprop:Generator_UserTableName="PromoBlock" msprop:Generator_RowDeletedName="PromoBlockRowDeleted" msprop:Generator_TableClassName="PromoBlockDataTable" msprop:Generator_RowChangedName="PromoBlockRowChanged" msprop:Generator_RowClassName="PromoBlockRow" msprop:Generator_RowChangingName="PromoBlockRowChanging" msprop:Generator_RowEvArgName="PromoBlockRowChangeEvent" msprop:Generator_RowEvHandlerName="PromoBlockRowChangeEventHandler" msprop:Generator_TablePropName="PromoBlock" msprop:Generator_TableVarName="tablePromoBlock" msprop:Generator_RowDeletingName="PromoBlockRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="block_id" msprop:Generator_UserColumnName="block_id" msprop:Generator_ColumnPropNameInRow="block_id" msprop:Generator_ColumnVarNameInTable="columnblock_id" msprop:Generator_ColumnPropNameInTable="block_idColumn" type="xs:int" />
+              <xs:element name="title" msprop:Generator_UserColumnName="title" msprop:Generator_ColumnPropNameInRow="title" msprop:Generator_ColumnVarNameInTable="columntitle" msprop:Generator_ColumnPropNameInTable="titleColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="description" msprop:Generator_UserColumnName="description" msprop:Generator_ColumnPropNameInRow="description" msprop:Generator_ColumnVarNameInTable="columndescription" msprop:Generator_ColumnPropNameInTable="descriptionColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="graphic_path" msprop:Generator_UserColumnName="graphic_path" msprop:Generator_ColumnPropNameInRow="graphic_path" msprop:Generator_ColumnVarNameInTable="columngraphic_path" msprop:Generator_ColumnPropNameInTable="graphic_pathColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="link_name" msprop:Generator_UserColumnName="link_name" msprop:Generator_ColumnPropNameInRow="link_name" msprop:Generator_ColumnVarNameInTable="columnlink_name" msprop:Generator_ColumnPropNameInTable="link_nameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="link_path" msprop:Generator_UserColumnName="link_path" msprop:Generator_ColumnPropNameInRow="link_path" msprop:Generator_ColumnVarNameInTable="columnlink_path" msprop:Generator_ColumnPropNameInTable="link_pathColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:PromoBlock" />
+      <xs:field xpath="mstns:block_id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

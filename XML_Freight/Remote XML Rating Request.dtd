@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT Carrier EMPTY>
+<!ATTLIST Carrier
+	name CDATA #IMPLIED
+	scac CDATA #IMPLIED
+>
+<!ELEMENT City (#PCDATA)>
+<!ELEMENT Constraints (Contract?,Carrier?,Mode?,ServiceFlags?)>
+<!ELEMENT Contract (EMPTY)>
+<!ATTLIST Contract
+	type NMTOKEN #IMPLIED
+>
+<!ELEMENT Country (#PCDATA)>
+<!ELEMENT Dimensions EMPTY>
+<!ATTLIST Dimensions
+	height NMTOKEN #REQUIRED
+	length NMTOKEN #REQUIRED
+	units NMTOKEN #REQUIRED
+	width NMTOKEN #REQUIRED
+>
+<!ELEMENT Event (Location)>
+<!ATTLIST Event
+	date CDATA #REQUIRED
+	sequence NMTOKEN #REQUIRED
+	type (Pickup|Drop) #REQUIRED
+>
+<!ELEMENT Events (Event+)>
+<!ELEMENT Item (Weight,Dimensions?,Quantity?,MonetaryValue?)>
+<!ATTLIST Item
+	name CDATA #IMPLIED
+	freightClass NMTOKEN #REQUIRED
+	sequence NMTOKEN #REQUIRED
+>
+<!ELEMENT Items (Item+)>
+<!ELEMENT LinearFeet (#PCDATA)>
+<!ELEMENT Location (City,State,Zip,Country)>
+<!ELEMENT Mode (#PCDATA)>
+<!ELEMENT MonetaryValue (#PCDATA)>
+<!ELEMENT Quantity (#PCDATA)>
+<!ATTLIST Quantity units NMTOKEN #REQUIRED>
+<!ELEMENT RateRequest (Constraints,Items,Events,LinearFeet?,RatingCount?)>
+<!ELEMENT RatingCount (#PCDATA)>
+<!ELEMENT ServiceFlag EMPTY>
+<!ATTLIST ServiceFlag code NMTOKEN #REQUIRED>
+<!ELEMENT ServiceFlags (ServiceFlag*)>
+<!ELEMENT State (#PCDATA)>
+<!ELEMENT Weight (#PCDATA)>
+<!ATTLIST Weight units NMTOKEN #REQUIRED>
+<!ELEMENT Zip (#PCDATA)>

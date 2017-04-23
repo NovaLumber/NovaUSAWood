@@ -1,0 +1,21 @@
+BEGIN:VCARD
+VERSION:2.1
+N:Zugman;David
+FN:David Zugman
+ORG:Nova Forest Products
+TITLE:Director
+TEL;WORK;VOICE:55 41 3245-0414
+TEL;CELL;VOICE:55 41 8843-7009
+ADR;WORK;PREF;ENCODING=QUOTED-PRINTABLE:;;Rua Joao Bettega, 4470=0D=0A=
+CIC;CURITIBA;PARANA;81350-000;Brasil
+LABEL;WORK;PREF;ENCODING=QUOTED-PRINTABLE:Rua Joao Bettega, 4470=0D=0A=
+CIC=0D=0A=
+CURITIBA - PARANA=0D=0A=
+Brasil=0D=0A=
+81350-000
+X-MS-OL-DEFAULT-POSTAL-ADDRESS:2
+URL;WORK:www.novausawood.com
+EMAIL;PREF;INTERNET:dzugman@novafp.com.br
+X-MS-OL-DESIGN;CHARSET=utf-8:<card xmlns="http://schemas.microsoft.com/office/outlook/12/electronicbusinesscards" ver="1.0" layout="left" bgcolor="ffffff"><img xmlns="" align="fit" area="16" use="cardpicture"/><fld xmlns="" prop="name" align="left" dir="ltr" style="b" color="000000" size="10"/><fld xmlns="" prop="org" align="left" dir="ltr" color="000000" size="8"/><fld xmlns="" prop="title" align="left" dir="ltr" color="000000" size="8"/><fld xmlns="" prop="telwork" align="left" dir="ltr" color="000000" size="8"><label align="right" color="626262">Comercial</label></fld><fld xmlns="" prop="telcell" align="left" dir="ltr" color="000000" size="8"><label align="right" color="626262">Celular</label></fld><fld xmlns="" prop="email" align="left" dir="ltr" color="000000" size="8"/><fld xmlns="" prop="addrwork" align="left" dir="ltr" color="000000" size="8"/><fld xmlns="" prop="webwork" align="left" dir="ltr" color="000000" size="8"/><fld xmlns="" prop="blank" size="8"/><fld xmlns="" prop="blank" size="8"/><fld xmlns="" prop="blank" size="8"/><fld xmlns="" prop="blank" size="8"/><fld xmlns="" prop="blank" size="8"/><fld xmlns="" prop="blank" size="8"/><fld xmlns="" prop="blank" size="8"/><fld xmlns="" prop="blank" size="8"/></card>
+REV:20090210T121333Z
+END:VCARD

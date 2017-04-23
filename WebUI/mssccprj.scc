@@ -1,0 +1,13 @@
+SCC = This is a Source Code Control file
+
+[NovaUSA.csproj]
+SCC_Aux_Path = "\\Nova-dev01\VSS_NOVA_SHARE"
+SCC_Project_Name = "$/NovaUSA/NovaUSA", SPCAAAAA
+
+[NovaUSA.sln]
+SCC_Aux_Path = "\\Nova-dev01\VSS_NOVA_SHARE"
+SCC_Project_Name = "$/NovaUSA/NovaUSA", SPCAAAAA
+
+[WebUI.csproj]
+SCC_Aux_Path = "I:\VSSDataBase"
+SCC_Project_Name = "$/NovaUSAWood/NovaUSAWood.root/NovaUSAWood/WebUI", HNKBAAAA

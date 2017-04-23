@@ -1,0 +1,110 @@
+
+body {
+	/*-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/background-horses.jpg', sizingMethod='scale')";
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/background-horses.jpg', sizingMethod='scale')*/
+}
+html,
+body {
+	/*min-width: 1920px;*/
+}
+
+#mainWithSideBar,
+#hardwoodFlooringBox,
+#exteriorDeckingBox,
+#ourCommitmentBox,
+#floorFinderBox {
+		/*background: transparent;
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#80FFFFFF,endColorstr=#80FFFFFF);
+		zoom: 1;*/
+		
+		/* Cee, this is all you need for IE, could also be added to general CSS */
+		filter:alpha(opacity=90);
+} 
+#mainNoSideBar {
+	background:white;
+	/* google maps don't work with transparency in ie <9 */
+}
+/*
+#hardwoodFlooringBox,
+#exteriorDeckingBox,
+#ourCommitmentBox {
+        filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=12,MakeShadow=true,ShadowOpacity=0.70);
+        -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=12,MakeShadow=true,ShadowOpacity=0.70)";
+        zoom: 1;
+}
+*/
+
+#floorFinderTitle {
+	float:left;
+}
+
+.button {
+	border: 0px;
+}
+
+
+/* the following images are all width of 1920px so that they work in ie 8 and below */
+/* steve */
+.horses {
+	background: #555 url(background-horses-2.jpg) center center no-repeat fixed;
+}
+	
+.cherries {
+	background: #555 url(cherries-2.jpg) center center no-repeat fixed;
+}
+
+.grapes {
+	background: #555 url(grapes-2.jpg) center center no-repeat fixed;
+}
+
+.mud {
+	background: #555 url(mud-2.jpg) top center no-repeat fixed;
+}
+
+.boots {
+	background: #555 url(background-boots-3.jpg) center center no-repeat fixed;
+}
+
+.map {
+	background: #555 url(map-europe-2.jpg) center center no-repeat fixed;
+}
+
+.forest {
+	background: #555 url(forest-2.jpg) center center no-repeat fixed;
+}
+
+.martini {
+	background: #555 url(background-martini-3.jpg) center center no-repeat fixed;
+}
+
+.dogs {
+	background: #555 url(dogs-playing-poker-2.jpg) center center no-repeat fixed;
+}
+
+.pie {
+	background: #555 url(background-pie-3.jpg) center center no-repeat fixed;
+}
+
+.child {
+	background: #555 url(background-child-4.jpg) center center no-repeat fixed;
+}
+
+.deck {
+	background: #555 url(background-cumaru-deck-2.jpg) center center no-repeat fixed;
+}
+
+.trailer {
+	background: #555 url(purdy-sit-2.jpg) center center no-repeat fixed;
+}
+
+.shoe {
+	background: #555 url(background-shoe-2.jpg) center center no-repeat fixed;
+}
+
+.tube-boy {
+	background: #555 url(background-tube-boy-2.jpg) center center no-repeat fixed;
+}
+
+.lumber-yard {
+	background: #555 url(background-lumber-yard-2.jpg) center center no-repeat fixed;
+}

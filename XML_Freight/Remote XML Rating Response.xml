@@ -1,0 +1,120 @@
+<RateResults>
+	<StatusCode>0</StatusCode>
+	<StatusMessage>Rating process completed without errors.</StatusMessage>
+	<PriceSheets>
+		<PriceSheet type="Cost" chargeModel="NORMALIZED_SMC" isSelected="true" 
+			isAllocated="false" createDate="04/20/2005 11:46">
+			<AccessorialTotal>6.50</AccessorialTotal>
+			<SubTotal>99.95</SubTotal>
+			<Total>106.45</Total>
+			<ContractId>(114308600,3023,0)</ContractId>
+			<ContractName>Current Long Haul Customer</ContractName>
+			<CarrierId>(100764600,3840,0)</CarrierId>
+			<CarrierName>MercuryGate Transportation</CarrierName>
+			<SCAC>MGMG</SCAC>
+			<Mode>LTL</Mode>
+			<Service>Ground</Service>
+			<ServiceDays>3.0</ServiceDays>
+			<Distance>750.0</Distance>
+			<Id>MG1234</Id>
+			<Address type="Office" isResidential="false" isPrimary="false">
+				<ReferenceNumbers/>
+				<LocationCode/>
+				<Alias />
+				<Name>MercuryGate</Name>
+				<AddrLine1>1654 Old Apex Rd</AddrLine1>
+				<AddrLine2></AddrLine2>
+				<City>Cary</City>
+				<StateProvince>NC</StateProvince>
+				<PostalCode>27513</PostalCode>
+				<CountryCode>USA</CountryCode>
+				<Country>United States of America</Country>
+				<Contacts>
+					<Contact type="">
+						<Name>Tim Snyder</Name>
+						<ContactMethods>
+							<ContactMethod sequenceNum="1" type="Phone">919-469-8057</ContactMethod>
+							<ContactMethod sequenceNum="2" type="Fax">919-469-8027</ContactMethod>
+						</ContactMethods>
+					</Contact>
+				</Contacts>
+			</Address>
+			<ReasonCode/>
+			<Status></Status>
+			<LaneID/>
+			<Zone/>
+			<Charges>
+				<Charge sequenceNum="1" type="ITEM" itemGroupId="1">
+					<Description></Description>
+					<EdiCode></EdiCode>
+					<Amount>27.47</Amount>
+					<Rate>54.94</Rate>
+					<RateQualifier>CW</RateQualifier>
+					<Quantity>0.5</Quantity>
+					<Weight>50.0</Weight>
+					<DimWeight>0.0</DimWeight>
+					<FreightClass>50.0</FreightClass>
+					<FakFreightClass>77.5</FakFreightClass>
+					<IsMin>false</IsMin>
+					<IsMax>false</IsMax>
+				</Charge>
+				<Charge sequenceNum="2" type="ITEM" itemGroupId="2">
+					<Description></Description>
+					<EdiCode></EdiCode>
+					<Amount>54.94</Amount>
+					<Rate>54.94</Rate>
+					<RateQualifier>CW</RateQualifier>
+					<Quantity>1.0</Quantity>
+					<Weight>100.0</Weight>
+					<DimWeight>0.0</DimWeight>
+					<FreightClass>70.0</FreightClass>
+					<FakFreightClass>77.5</FakFreightClass>
+					<IsMin>false</IsMin>
+					<IsMax>false</IsMax>
+				</Charge>
+				<Charge sequenceNum="3" type="DISCOUNT" itemGroupId="">
+					<Description>Discount</Description>
+					<EdiCode></EdiCode>
+					<Amount>-18.95</Amount>
+					<Rate>23.00</Rate>
+					<RateQualifier>PCT</RateQualifier>
+					<Quantity/>
+					<Weight>0.0</Weight>
+					<DimWeight>0.0</DimWeight>
+					<FreightClass>0.0</FreightClass>
+					<FakFreightClass>0.0</FakFreightClass>
+					<IsMin>false</IsMin>
+					<IsMax>false</IsMax>
+				</Charge>
+				<Charge sequenceNum="4" type="MG_MINMAX_ADJ" itemGroupId="">
+					<Description>Contract Minimum Reached</Description>
+					<EdiCode></EdiCode>
+					<Amount>36.49</Amount>
+					<Rate>99.95</Rate>
+					<RateQualifier>FR</RateQualifier>
+					<Quantity/>
+					<Weight>0.0</Weight>
+					<DimWeight>0.0</DimWeight>
+					<FreightClass>0.0</FreightClass>
+					<FakFreightClass>0.0</FakFreightClass>
+					<IsMin>false</IsMin>
+					<IsMax>false</IsMax>
+				</Charge>
+				<Charge sequenceNum="5" type="ACCESSORIAL_FUEL" itemGroupId="">
+					<Description>Fuel Surcharge</Description>
+					<EdiCode>FUE</EdiCode>
+					<Amount>6.50</Amount>
+					<Rate>6.50</Rate>
+					<RateQualifier>FR</RateQualifier>
+					<Quantity/>
+					<Weight>0.0</Weight>
+					<DimWeight>0.0</DimWeight>
+					<FreightClass>0.0</FreightClass>
+					<FakFreightClass>0.0</FakFreightClass>
+					<IsMin>false</IsMin>
+					<IsMax>false</IsMax>
+				</Charge>
+			</Charges>
+		</PriceSheet>
+	</PriceSheets>
+</RateResults>

@@ -1,0 +1,9 @@
+C:\inetpub\milo\WebUI\bin\WebUI.dll
+C:\inetpub\milo\WebUI\bin\WebUI.pdb
+C:\inetpub\milo\WebUI\bin\BusinessTier.dll
+C:\inetpub\milo\WebUI\bin\log4net.dll
+C:\inetpub\milo\WebUI\bin\paypal_base.dll
+C:\inetpub\milo\WebUI\bin\BusinessTier.pdb
+C:\inetpub\milo\WebUI\obj\Debug\ResolveAssemblyReference.cache
+C:\inetpub\milo\WebUI\obj\Debug\WebUI.dll
+C:\inetpub\milo\WebUI\obj\Debug\WebUI.pdb

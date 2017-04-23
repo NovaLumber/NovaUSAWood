@@ -1,0 +1,293 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{76753297-A2FC-4990-B9C7-257948CD46A8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Data</RootNamespace>
+    <AssemblyName>Data</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.0.30714, Culture=neutral, PublicKeyToken=b32731d11ce58905">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\PayPal ASP.NET SDK\bin\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="paypal_base, Version=4.3.5.0, Culture=neutral, PublicKeyToken=b37401294aaf5617">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\PayPal ASP.NET SDK\bin\paypal_base.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Attributes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Attributes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Cart.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cart.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CheckoutTables.cs">
+      <DependentUpon>CheckoutTables.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CheckoutTables.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CheckoutTables.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataQuery.cs" />
+    <Compile Include="FiltersDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FiltersDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Learn.cs">
+      <DependentUpon>Learn.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Learn.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Learn.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Locations.cs">
+      <DependentUpon>Locations.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Locations.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Locations.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProductList.cs">
+      <DependentUpon>ProductList.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ProductList.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProductList.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProductPhotos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProductPhotos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PromoBlocks.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PromoBlocks.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Promotions.cs">
+      <DependentUpon>Promotions.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Promotions.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Promotions.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="RijndaelSimple.cs" />
+    <Compile Include="ShippingOption.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Attributes.xsc">
+      <DependentUpon>Attributes.xsd</DependentUpon>
+    </None>
+    <None Include="Attributes.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Attributes.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Attributes.xss">
+      <DependentUpon>Attributes.xsd</DependentUpon>
+    </None>
+    <None Include="Cart.xsc">
+      <DependentUpon>Cart.xsd</DependentUpon>
+    </None>
+    <None Include="Cart.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Cart.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Cart.xss">
+      <DependentUpon>Cart.xsd</DependentUpon>
+    </None>
+    <None Include="CheckoutTables.xsc">
+      <DependentUpon>CheckoutTables.xsd</DependentUpon>
+    </None>
+    <None Include="CheckoutTables.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CheckoutTables.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="CheckoutTables.xss">
+      <DependentUpon>CheckoutTables.xsd</DependentUpon>
+    </None>
+    <None Include="FiltersDS.xsc">
+      <DependentUpon>FiltersDS.xsd</DependentUpon>
+    </None>
+    <None Include="FiltersDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FiltersDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="FiltersDS.xss">
+      <DependentUpon>FiltersDS.xsd</DependentUpon>
+    </None>
+    <None Include="Learn.xsc">
+      <DependentUpon>Learn.xsd</DependentUpon>
+    </None>
+    <None Include="Learn.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Learn.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Learn.xss">
+      <DependentUpon>Learn.xsd</DependentUpon>
+    </None>
+    <None Include="Locations.xsc">
+      <DependentUpon>Locations.xsd</DependentUpon>
+    </None>
+    <None Include="Locations.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Locations.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Locations.xss">
+      <DependentUpon>Locations.xsd</DependentUpon>
+    </None>
+    <None Include="ProductList.xsc">
+      <DependentUpon>ProductList.xsd</DependentUpon>
+    </None>
+    <None Include="ProductList.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProductList.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ProductList.xss">
+      <DependentUpon>ProductList.xsd</DependentUpon>
+    </None>
+    <None Include="SQL Scripts\DB_update_20071022_WebIteration2.sql" />
+    <None Include="SQL Scripts\DB_update_20071029_WebIteration2Cleanup.sql" />
+    <None Include="SQL Scripts\DB_update_20071030_WebIteration3ShoppingCart.sql" />
+    <None Include="SQL Scripts\DB_update_20071104_web_mods.sql" />
+    <None Include="SQL Scripts\DB_update_20071108_WebIteration3Cleanup.sql" />
+    <None Include="SQL Scripts\DB_update_20071109_web_CustomerAccounts.sql" />
+    <None Include="SQL Scripts\DB_update_20071112_web_FixesAndCheckoutContinued.sql" />
+    <None Include="SQL Scripts\DB_update_20071114_web_ProductsTableSPChanges.sql" />
+    <None Include="SQL Scripts\DB_update_20071120_web_CheckoutContinuedShipping.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SQL Scripts\DB_update_20071123_web_MeetingFixes.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ProductPhotos.xsc">
+      <DependentUpon>ProductPhotos.xsd</DependentUpon>
+    </None>
+    <None Include="ProductPhotos.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProductPhotos.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ProductPhotos.xss">
+      <DependentUpon>ProductPhotos.xsd</DependentUpon>
+    </None>
+    <None Include="PromoBlocks.xsc">
+      <DependentUpon>PromoBlocks.xsd</DependentUpon>
+    </None>
+    <None Include="PromoBlocks.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PromoBlocks.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="PromoBlocks.xss">
+      <DependentUpon>PromoBlocks.xsd</DependentUpon>
+    </None>
+    <None Include="Promotions.xsc">
+      <DependentUpon>Promotions.xsd</DependentUpon>
+    </None>
+    <None Include="Promotions.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Promotions.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Promotions.xss">
+      <DependentUpon>Promotions.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="SQL Scripts\DB_update_20071124_web_CheckoutContinued.sql" />
+    <None Include="SQL Scripts\DB_update_20071125_web_MeetingFixesAndCheckoutContinued.sql" />
+    <None Include="SQL Scripts\DB_update_20071127_web_ReceiptStuff.sql" />
+    <None Include="SQL Scripts\DB_update_20071130_web_FreightStuff.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PayPalLibrary\PayPalLibrary.csproj">
+      <Project>{1FF187CE-A4A7-42C1-B27B-7FA31CA46FCD}</Project>
+      <Name>PayPalLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TODO List.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

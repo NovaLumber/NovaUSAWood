@@ -1,0 +1,36 @@
+<RateRequest>
+	<Constraints>
+		<Contract />
+		<Carrier />
+		<Mode />
+		<ServiceFlags/>
+	</Constraints>
+	<Items>
+		<Item sequence="1" freightClass="50">
+			<Weight units="lb">50.0</Weight>
+			<Dimensions length="5.0" width="5.0" height="5.0" units="in" />
+		</Item>
+		<Item sequence="2" freightClass="70">
+			<Weight units="lb">100.0</Weight>
+			<Dimensions length="5.0" width="5.0" height="5.0" units="in" />
+		</Item>
+	</Items>
+	<Events>
+		<Event sequence="1" type="Pickup" date="4/20/2005 16:20">
+			<Location>
+				<City>Cary</City>
+				<State>NC</State>
+				<Zip>27513</Zip>
+				<Country>USA</Country>
+			</Location>
+		</Event>
+		<Event sequence="2" type="Drop" date="4/22/2005 16:22">
+			<Location>
+				<City>Cavendish</City>
+				<State>VT</State>
+				<Zip>05142</Zip>
+				<Country>USA</Country>
+			</Location>
+		</Event>
+	</Events>
+</RateRequest>

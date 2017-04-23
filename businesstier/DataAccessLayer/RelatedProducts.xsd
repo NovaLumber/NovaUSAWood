@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="RelatedProducts" targetNamespace="http://tempuri.org/RelatedProducts.xsd" xmlns:mstns="http://tempuri.org/RelatedProducts.xsd" xmlns="http://tempuri.org/RelatedProducts.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="woodmonstersConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="woodmonstersConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.BusinessTier.Properties.Settings.GlobalReference.Default.woodmonstersConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="prodviewTableAdapter" GeneratorDataComponentClassName="prodviewTableAdapter" Name="prodview" UserDataComponentName="prodviewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="woodmonstersConnectionString1 (Settings)" DbObjectName="woodmonsters.dbo.prodview" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT prod_id, pid_code, sort_code, prod_loc_code, price, inventory_label, species_description, condition_desc, usage_desc, size_desc, net_desc, size_nom_thick, size_nom_width, grade_desc, grain_desc, inv_only_flag, species_abbrev, sal_only_flag, fixed_length, class_cd, panel, tagged, length, brand_desc, style_desc, unit_of_sale_id, unit_of_sale, species_code, grain_code, grade_code, usage_cd, condition_code, size_cd, weight_id, short_desc, long_desc, web_price, image1filename, image2filename, image3filename, onFeature, bf_per_unit_of_sale, default_unit_id, onWebOverride, style_id, brand_id, nail, staple, glue, float, install_text, radiant, unit_label, price_label, unit_of_sale_desc, prod_id_code128, other_names, unit_of_sale_add_text, reg_price, brand_logo FROM dbo.prodview</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="prod_id" DataSetColumn="prod_id" />
+              <Mapping SourceColumn="pid_code" DataSetColumn="pid_code" />
+              <Mapping SourceColumn="sort_code" DataSetColumn="sort_code" />
+              <Mapping SourceColumn="prod_loc_code" DataSetColumn="prod_loc_code" />
+              <Mapping SourceColumn="price" DataSetColumn="price" />
+              <Mapping SourceColumn="inventory_label" DataSetColumn="inventory_label" />
+              <Mapping SourceColumn="species_description" DataSetColumn="species_description" />
+              <Mapping SourceColumn="condition_desc" DataSetColumn="condition_desc" />
+              <Mapping SourceColumn="usage_desc" DataSetColumn="usage_desc" />
+              <Mapping SourceColumn="size_desc" DataSetColumn="size_desc" />
+              <Mapping SourceColumn="net_desc" DataSetColumn="net_desc" />
+              <Mapping SourceColumn="size_nom_thick" DataSetColumn="size_nom_thick" />
+              <Mapping SourceColumn="size_nom_width" DataSetColumn="size_nom_width" />
+              <Mapping SourceColumn="grade_desc" DataSetColumn="grade_desc" />
+              <Mapping SourceColumn="grain_desc" DataSetColumn="grain_desc" />
+              <Mapping SourceColumn="inv_only_flag" DataSetColumn="inv_only_flag" />
+              <Mapping SourceColumn="species_abbrev" DataSetColumn="species_abbrev" />
+              <Mapping SourceColumn="sal_only_flag" DataSetColumn="sal_only_flag" />
+              <Mapping SourceColumn="fixed_length" DataSetColumn="fixed_length" />
+              <Mapping SourceColumn="class_cd" DataSetColumn="class_cd" />
+              <Mapping SourceColumn="panel" DataSetColumn="panel" />
+              <Mapping SourceColumn="tagged" DataSetColumn="tagged" />
+              <Mapping SourceColumn="length" DataSetColumn="length" />
+              <Mapping SourceColumn="brand_desc" DataSetColumn="brand_desc" />
+              <Mapping SourceColumn="style_desc" DataSetColumn="style_desc" />
+              <Mapping SourceColumn="unit_of_sale_id" DataSetColumn="unit_of_sale_id" />
+              <Mapping SourceColumn="unit_of_sale" DataSetColumn="unit_of_sale" />
+              <Mapping SourceColumn="species_code" DataSetColumn="species_code" />
+              <Mapping SourceColumn="grain_code" DataSetColumn="grain_code" />
+              <Mapping SourceColumn="grade_code" DataSetColumn="grade_code" />
+              <Mapping SourceColumn="usage_cd" DataSetColumn="usage_cd" />
+              <Mapping SourceColumn="condition_code" DataSetColumn="condition_code" />
+              <Mapping SourceColumn="size_cd" DataSetColumn="size_cd" />
+              <Mapping SourceColumn="weight_id" DataSetColumn="weight_id" />
+              <Mapping SourceColumn="short_desc" DataSetColumn="short_desc" />
+              <Mapping SourceColumn="long_desc" DataSetColumn="long_desc" />
+              <Mapping SourceColumn="web_price" DataSetColumn="web_price" />
+              <Mapping SourceColumn="image1filename" DataSetColumn="image1filename" />
+              <Mapping SourceColumn="image2filename" DataSetColumn="image2filename" />
+              <Mapping SourceColumn="image3filename" DataSetColumn="image3filename" />
+              <Mapping SourceColumn="onFeature" DataSetColumn="onFeature" />
+              <Mapping SourceColumn="bf_per_unit_of_sale" DataSetColumn="bf_per_unit_of_sale" />
+              <Mapping SourceColumn="default_unit_id" DataSetColumn="default_unit_id" />
+              <Mapping SourceColumn="onWebOverride" DataSetColumn="onWebOverride" />
+              <Mapping SourceColumn="style_id" DataSetColumn="style_id" />
+              <Mapping SourceColumn="brand_id" DataSetColumn="brand_id" />
+              <Mapping SourceColumn="nail" DataSetColumn="nail" />
+              <Mapping SourceColumn="staple" DataSetColumn="staple" />
+              <Mapping SourceColumn="glue" DataSetColumn="glue" />
+              <Mapping SourceColumn="float" DataSetColumn="float" />
+              <Mapping SourceColumn="install_text" DataSetColumn="install_text" />
+              <Mapping SourceColumn="radiant" DataSetColumn="radiant" />
+              <Mapping SourceColumn="unit_label" DataSetColumn="unit_label" />
+              <Mapping SourceColumn="price_label" DataSetColumn="price_label" />
+              <Mapping SourceColumn="unit_of_sale_desc" DataSetColumn="unit_of_sale_desc" />
+              <Mapping SourceColumn="prod_id_code128" DataSetColumn="prod_id_code128" />
+              <Mapping SourceColumn="other_names" DataSetColumn="other_names" />
+              <Mapping SourceColumn="unit_of_sale_add_text" DataSetColumn="unit_of_sale_add_text" />
+              <Mapping SourceColumn="reg_price" DataSetColumn="reg_price" />
+              <Mapping SourceColumn="brand_logo" DataSetColumn="brand_logo" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="RelatedProducts" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="RelatedProducts" msprop:Generator_DataSetName="RelatedProducts">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="prodview" msprop:Generator_UserTableName="prodview" msprop:Generator_RowDeletedName="prodviewRowDeleted" msprop:Generator_RowChangedName="prodviewRowChanged" msprop:Generator_RowClassName="prodviewRow" msprop:Generator_RowChangingName="prodviewRowChanging" msprop:Generator_RowEvArgName="prodviewRowChangeEvent" msprop:Generator_RowEvHandlerName="prodviewRowChangeEventHandler" msprop:Generator_TableClassName="prodviewDataTable" msprop:Generator_TableVarName="tableprodview" msprop:Generator_RowDeletingName="prodviewRowDeleting" msprop:Generator_TablePropName="prodview">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="prod_id" msprop:Generator_UserColumnName="prod_id" msprop:Generator_ColumnVarNameInTable="columnprod_id" msprop:Generator_ColumnPropNameInRow="prod_id" msprop:Generator_ColumnPropNameInTable="prod_idColumn" type="xs:int" />
+              <xs:element name="pid_code" msprop:Generator_UserColumnName="pid_code" msprop:Generator_ColumnVarNameInTable="columnpid_code" msprop:Generator_ColumnPropNameInRow="pid_code" msprop:Generator_ColumnPropNameInTable="pid_codeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="18" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="sort_code" msprop:Generator_UserColumnName="sort_code" msprop:Generator_ColumnVarNameInTable="columnsort_code" msprop:Generator_ColumnPropNameInRow="sort_code" msprop:Generator_ColumnPropNameInTable="sort_codeColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="prod_loc_code" msprop:Generator_UserColumnName="prod_loc_code" msprop:Generator_ColumnVarNameInTable="columnprod_loc_code" msprop:Generator_ColumnPropNameInRow="prod_loc_code" msprop:Generator_ColumnPropNameInTable="prod_loc_codeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="price" msprop:Generator_UserColumnName="price" msprop:Generator_ColumnVarNameInTable="columnprice" msprop:Generator_ColumnPropNameInRow="price" msprop:Generator_ColumnPropNameInTable="priceColumn" type="xs:float" minOccurs="0" />
+              <xs:element name="inventory_label" msprop:Generator_UserColumnName="inventory_label" msprop:Generator_ColumnVarNameInTable="columninventory_label" msprop:Generator_ColumnPropNameInRow="inventory_label" msprop:Generator_ColumnPropNameInTable="inventory_labelColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="species_description" msprop:Generator_UserColumnName="species_description" msprop:Generator_ColumnVarNameInTable="columnspecies_description" msprop:Generator_ColumnPropNameInRow="species_description" msprop:Generator_ColumnPropNameInTable="species_descriptionColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="condition_desc" msprop:Generator_UserColumnName="condition_desc" msprop:Generator_ColumnVarNameInTable="columncondition_desc" msprop:Generator_ColumnPropNameInRow="condition_desc" msprop:Generator_ColumnPropNameInTable="condition_descColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="usage_desc" msprop:Generator_UserColumnName="usage_desc" msprop:Generator_ColumnVarNameInTable="columnusage_desc" msprop:Generator_ColumnPropNameInRow="usage_desc" msprop:Generator_ColumnPropNameInTable="usage_descColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="size_desc" msprop:Generator_UserColumnName="size_desc" msprop:Generator_ColumnVarNameInTable="columnsize_desc" msprop:Generator_ColumnPropNameInRow="size_desc" msprop:Generator_ColumnPropNameInTable="size_descColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="net_desc" msprop:Generator_UserColumnName="net_desc" msprop:Generator_ColumnVarNameInTable="columnnet_desc" msprop:Generator_ColumnPropNameInRow="net_desc" msprop:Generator_ColumnPropNameInTable="net_descColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="size_nom_thick" msprop:Generator_UserColumnName="size_nom_thick" msprop:Generator_ColumnVarNameInTable="columnsize_nom_thick" msprop:Generator_ColumnPropNameInRow="size_nom_thick" msprop:Generator_ColumnPropNameInTable="size_nom_thickColumn" type="xs:float" />
+              <xs:element name="size_nom_width" msprop:Generator_UserColumnName="size_nom_width" msprop:Generator_ColumnVarNameInTable="columnsize_nom_width" msprop:Generator_ColumnPropNameInRow="size_nom_width" msprop:Generator_ColumnPropNameInTable="size_nom_widthColumn" type="xs:float" />
+              <xs:element name="grade_desc" msprop:Generator_UserColumnName="grade_desc" msprop:Generator_ColumnVarNameInTable="columngrade_desc" msprop:Generator_ColumnPropNameInRow="grade_desc" msprop:Generator_ColumnPropNameInTable="grade_descColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="grain_desc" msprop:Generator_UserColumnName="grain_desc" msprop:Generator_ColumnVarNameInTable="columngrain_desc" msprop:Generator_ColumnPropNameInRow="grain_desc" msprop:Generator_ColumnPropNameInTable="grain_descColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="16" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="inv_only_flag" msprop:Generator_UserColumnName="inv_only_flag" msprop:Generator_ColumnVarNameInTable="columninv_only_flag" msprop:Generator_ColumnPropNameInRow="inv_only_flag" msprop:Generator_ColumnPropNameInTable="inv_only_flagColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="species_abbrev" msprop:Generator_UserColumnName="species_abbrev" msprop:Generator_ColumnVarNameInTable="columnspecies_abbrev" msprop:Generator_ColumnPropNameInRow="species_abbrev" msprop:Generator_ColumnPropNameInTable="species_abbrevColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="16" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="sal_only_flag" msprop:Generator_UserColumnName="sal_only_flag" msprop:Generator_ColumnVarNameInTable="columnsal_only_flag" msprop:Generator_ColumnPropNameInRow="sal_only_flag" msprop:Generator_ColumnPropNameInTable="sal_only_flagColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="fixed_length" msprop:Generator_UserColumnName="fixed_length" msprop:Generator_ColumnVarNameInTable="columnfixed_length" msprop:Generator_ColumnPropNameInRow="fixed_length" msprop:Generator_ColumnPropNameInTable="fixed_lengthColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="class_cd" msprop:Generator_UserColumnName="class_cd" msprop:Generator_ColumnVarNameInTable="columnclass_cd" msprop:Generator_ColumnPropNameInRow="class_cd" msprop:Generator_ColumnPropNameInTable="class_cdColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="panel" msprop:Generator_UserColumnName="panel" msprop:Generator_ColumnVarNameInTable="columnpanel" msprop:Generator_ColumnPropNameInRow="panel" msprop:Generator_ColumnPropNameInTable="panelColumn" type="xs:int" />
+              <xs:element name="tagged" msprop:Generator_UserColumnName="tagged" msprop:Generator_ColumnVarNameInTable="columntagged" msprop:Generator_ColumnPropNameInRow="tagged" msprop:Generator_ColumnPropNameInTable="taggedColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="length" msprop:Generator_UserColumnName="length" msprop:Generator_ColumnVarNameInTable="columnlength" msprop:Generator_ColumnPropNameInRow="length" msprop:Generator_ColumnPropNameInTable="lengthColumn" type="xs:float" />
+              <xs:element name="brand_desc" msprop:Generator_UserColumnName="brand_desc" msprop:Generator_ColumnVarNameInTable="columnbrand_desc" msprop:Generator_ColumnPropNameInRow="brand_desc" msprop:Generator_ColumnPropNameInTable="brand_descColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="style_desc" msdata:ReadOnly="true" msprop:Generator_UserColumnName="style_desc" msprop:Generator_ColumnVarNameInTable="columnstyle_desc" msprop:Generator_ColumnPropNameInRow="style_desc" msprop:Generator_ColumnPropNameInTable="style_descColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="unit_of_sale_id" msprop:Generator_UserColumnName="unit_of_sale_id" msprop:Generator_ColumnVarNameInTable="columnunit_of_sale_id" msprop:Generator_ColumnPropNameInRow="unit_of_sale_id" msprop:Generator_ColumnPropNameInTable="unit_of_sale_idColumn" type="xs:int" />
+              <xs:element name="unit_of_sale" msdata:ReadOnly="true" msprop:Generator_UserColumnName="unit_of_sale" msprop:Generator_ColumnVarNameInTable="columnunit_of_sale" msprop:Generator_ColumnPropNameInRow="unit_of_sale" msprop:Generator_ColumnPropNameInTable="unit_of_saleColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="106" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="species_code" msprop:Generator_UserColumnName="species_code" msprop:Generator_ColumnVarNameInTable="columnspecies_code" msprop:Generator_ColumnPropNameInRow="species_code" msprop:Generator_ColumnPropNameInTable="species_codeColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="grain_code" msprop:Generator_UserColumnName="grain_code" msprop:Generator_ColumnVarNameInTable="columngrain_code" msprop:Generator_ColumnPropNameInRow="grain_code" msprop:Generator_ColumnPropNameInTable="grain_codeColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="grade_code" msprop:Generator_UserColumnName="grade_code" msprop:Generator_ColumnVarNameInTable="columngrade_code" msprop:Generator_ColumnPropNameInRow="grade_code" msprop:Generator_ColumnPropNameInTable="grade_codeColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="usage_cd" msprop:Generator_UserColumnName="usage_cd" msprop:Generator_ColumnVarNameInTable="columnusage_cd" msprop:Generator_ColumnPropNameInRow="usage_cd" msprop:Generator_ColumnPropNameInTable="usage_cdColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="condition_code" msprop:Generator_UserColumnName="condition_code" msprop:Generator_ColumnVarNameInTable="columncondition_code" msprop:Generator_ColumnPropNameInRow="condition_code" msprop:Generator_ColumnPropNameInTable="condition_codeColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="size_cd" msprop:Generator_UserColumnName="size_cd" msprop:Generator_ColumnVarNameInTable="columnsize_cd" msprop:Generator_ColumnPropNameInRow="size_cd" msprop:Generator_ColumnPropNameInTable="size_cdColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="weight_id" msprop:Generator_UserColumnName="weight_id" msprop:Generator_ColumnVarNameInTable="columnweight_id" msprop:Generator_ColumnPropNameInRow="weight_id" msprop:Generator_ColumnPropNameInTable="weight_idColumn" type="xs:int" />
+              <xs:element name="short_desc" msprop:Generator_UserColumnName="short_desc" msprop:Generator_ColumnVarNameInTable="columnshort_desc" msprop:Generator_ColumnPropNameInRow="short_desc" msprop:Generator_ColumnPropNameInTable="short_descColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="long_desc" msprop:Generator_UserColumnName="long_desc" msprop:Generator_ColumnVarNameInTable="columnlong_desc" msprop:Generator_ColumnPropNameInRow="long_desc" msprop:Generator_ColumnPropNameInTable="long_descColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="web_price" msprop:Generator_UserColumnName="web_price" msprop:Generator_ColumnVarNameInTable="columnweb_price" msprop:Generator_ColumnPropNameInRow="web_price" msprop:Generator_ColumnPropNameInTable="web_priceColumn" type="xs:decimal" />
+              <xs:element name="image1filename" msprop:Generator_UserColumnName="image1filename" msprop:Generator_ColumnVarNameInTable="columnimage1filename" msprop:Generator_ColumnPropNameInRow="image1filename" msprop:Generator_ColumnPropNameInTable="image1filenameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="image2filename" msprop:Generator_UserColumnName="image2filename" msprop:Generator_ColumnVarNameInTable="columnimage2filename" msprop:Generator_ColumnPropNameInRow="image2filename" msprop:Generator_ColumnPropNameInTable="image2filenameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="image3filename" msprop:Generator_UserColumnName="image3filename" msprop:Generator_ColumnVarNameInTable="columnimage3filename" msprop:Generator_ColumnPropNameInRow="image3filename" msprop:Generator_ColumnPropNameInTable="image3filenameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="onFeature" msprop:Generator_UserColumnName="onFeature" msprop:Generator_ColumnVarNameInTable="columnonFeature" msprop:Generator_ColumnPropNameInRow="onFeature" msprop:Generator_ColumnPropNameInTable="onFeatureColumn" type="xs:unsignedByte" />
+              <xs:element name="bf_per_unit_of_sale" msprop:Generator_UserColumnName="bf_per_unit_of_sale" msprop:Generator_ColumnVarNameInTable="columnbf_per_unit_of_sale" msprop:Generator_ColumnPropNameInRow="bf_per_unit_of_sale" msprop:Generator_ColumnPropNameInTable="bf_per_unit_of_saleColumn" type="xs:double" />
+              <xs:element name="default_unit_id" msprop:Generator_UserColumnName="default_unit_id" msprop:Generator_ColumnVarNameInTable="columndefault_unit_id" msprop:Generator_ColumnPropNameInRow="default_unit_id" msprop:Generator_ColumnPropNameInTable="default_unit_idColumn" type="xs:int" />
+              <xs:element name="onWebOverride" msprop:Generator_UserColumnName="onWebOverride" msprop:Generator_ColumnVarNameInTable="columnonWebOverride" msprop:Generator_ColumnPropNameInRow="onWebOverride" msprop:Generator_ColumnPropNameInTable="onWebOverrideColumn" type="xs:unsignedByte" />
+              <xs:element name="style_id" msprop:Generator_UserColumnName="style_id" msprop:Generator_ColumnVarNameInTable="columnstyle_id" msprop:Generator_ColumnPropNameInRow="style_id" msprop:Generator_ColumnPropNameInTable="style_idColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="brand_id" msprop:Generator_UserColumnName="brand_id" msprop:Generator_ColumnVarNameInTable="columnbrand_id" msprop:Generator_ColumnPropNameInRow="brand_id" msprop:Generator_ColumnPropNameInTable="brand_idColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="nail" msprop:Generator_UserColumnName="nail" msprop:Generator_ColumnVarNameInTable="columnnail" msprop:Generator_ColumnPropNameInRow="nail" msprop:Generator_ColumnPropNameInTable="nailColumn" type="xs:int" />
+              <xs:element name="staple" msprop:Generator_UserColumnName="staple" msprop:Generator_ColumnVarNameInTable="columnstaple" msprop:Generator_ColumnPropNameInRow="staple" msprop:Generator_ColumnPropNameInTable="stapleColumn" type="xs:int" />
+              <xs:element name="glue" msprop:Generator_UserColumnName="glue" msprop:Generator_ColumnVarNameInTable="columnglue" msprop:Generator_ColumnPropNameInRow="glue" msprop:Generator_ColumnPropNameInTable="glueColumn" type="xs:int" />
+              <xs:element name="float" msprop:Generator_UserColumnName="float" msprop:Generator_ColumnVarNameInTable="columnfloat" msprop:Generator_ColumnPropNameInRow="_float" msprop:Generator_ColumnPropNameInTable="floatColumn" type="xs:int" />
+              <xs:element name="install_text" msprop:Generator_UserColumnName="install_text" msprop:Generator_ColumnVarNameInTable="columninstall_text" msprop:Generator_ColumnPropNameInRow="install_text" msprop:Generator_ColumnPropNameInTable="install_textColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="radiant" msprop:Generator_UserColumnName="radiant" msprop:Generator_ColumnVarNameInTable="columnradiant" msprop:Generator_ColumnPropNameInRow="radiant" msprop:Generator_ColumnPropNameInTable="radiantColumn" type="xs:int" />
+              <xs:element name="unit_label" msprop:Generator_UserColumnName="unit_label" msprop:Generator_ColumnVarNameInTable="columnunit_label" msprop:Generator_ColumnPropNameInRow="unit_label" msprop:Generator_ColumnPropNameInTable="unit_labelColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="price_label" msprop:Generator_UserColumnName="price_label" msprop:Generator_ColumnVarNameInTable="columnprice_label" msprop:Generator_ColumnPropNameInRow="price_label" msprop:Generator_ColumnPropNameInTable="price_labelColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="unit_of_sale_desc" msprop:Generator_UserColumnName="unit_of_sale_desc" msprop:Generator_ColumnVarNameInTable="columnunit_of_sale_desc" msprop:Generator_ColumnPropNameInRow="unit_of_sale_desc" msprop:Generator_ColumnPropNameInTable="unit_of_sale_descColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="prod_id_code128" msprop:Generator_UserColumnName="prod_id_code128" msprop:Generator_ColumnVarNameInTable="columnprod_id_code128" msprop:Generator_ColumnPropNameInRow="prod_id_code128" msprop:Generator_ColumnPropNameInTable="prod_id_code128Column">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="other_names" msprop:Generator_UserColumnName="other_names" msprop:Generator_ColumnVarNameInTable="columnother_names" msprop:Generator_ColumnPropNameInRow="other_names" msprop:Generator_ColumnPropNameInTable="other_namesColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="unit_of_sale_add_text" msprop:Generator_UserColumnName="unit_of_sale_add_text" msprop:Generator_ColumnVarNameInTable="columnunit_of_sale_add_text" msprop:Generator_ColumnPropNameInRow="unit_of_sale_add_text" msprop:Generator_ColumnPropNameInTable="unit_of_sale_add_textColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="reg_price" msprop:Generator_UserColumnName="reg_price" msprop:Generator_ColumnVarNameInTable="columnreg_price" msprop:Generator_ColumnPropNameInRow="reg_price" msprop:Generator_ColumnPropNameInTable="reg_priceColumn" type="xs:decimal" />
+              <xs:element name="brand_logo" msprop:Generator_UserColumnName="brand_logo" msprop:Generator_ColumnVarNameInTable="columnbrand_logo" msprop:Generator_ColumnPropNameInRow="brand_logo" msprop:Generator_ColumnPropNameInTable="brand_logoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:prodview" />
+      <xs:field xpath="mstns:prod_id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

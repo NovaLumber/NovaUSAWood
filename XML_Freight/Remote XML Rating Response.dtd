@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT AccessorialTotal (#PCDATA)>
+<!ELEMENT AddrLine1 (#PCDATA)>
+<!ELEMENT AddrLine2 EMPTY>
+<!ELEMENT Address (ReferenceNumbers,LocationCode,Alias,Name,AddrLine1,AddrLine2,City,StateProvince,PostalCode,CountryCode,Country,Contacts)>
+<!ATTLIST Address
+	isPrimary NMTOKEN #REQUIRED
+	isResidential NMTOKEN #REQUIRED
+	type NMTOKEN #REQUIRED
+>
+<!ELEMENT Alias (#PCDATA)>
+<!ELEMENT Amount (#PCDATA)>
+<!ELEMENT CarrierId (#PCDATA)>
+<!ELEMENT CarrierName (#PCDATA)>
+<!ELEMENT Charge (Description,EdiCode,Amount,Rate,RateQualifier,Quantity,Weight,DimWeight,FreightClass,FakFreightClass,IsMin,IsMax)>
+<!ATTLIST Charge
+	itemGroupId CDATA #REQUIRED
+	sequenceNum NMTOKEN #REQUIRED
+	type NMTOKEN #REQUIRED
+>
+<!ELEMENT Charges (Charge+)>
+<!ELEMENT City (#PCDATA)>
+<!ELEMENT Contact (Name,ContactMethods)>
+<!ATTLIST Contact type CDATA #REQUIRED>
+<!ELEMENT ContactMethod (#PCDATA)>
+<!ATTLIST ContactMethod
+	sequenceNum NMTOKEN #REQUIRED
+	type NMTOKEN #REQUIRED
+>
+<!ELEMENT ContactMethods (ContactMethod+)>
+<!ELEMENT Contacts (Contact)>
+<!ELEMENT ContractId (#PCDATA)>
+<!ELEMENT ContractName (#PCDATA)>
+<!ELEMENT Country (#PCDATA)>
+<!ELEMENT CountryCode (#PCDATA)>
+<!ELEMENT Description (#PCDATA)>
+<!ELEMENT DimWeight (#PCDATA)>
+<!ELEMENT Distance (#PCDATA)>
+<!ELEMENT EdiCode (#PCDATA)>
+<!ELEMENT FakFreightClass (#PCDATA)>
+<!ELEMENT FreightClass (#PCDATA)>
+<!ELEMENT Id (#PCDATA)>
+<!ELEMENT IsMax (#PCDATA)>
+<!ELEMENT IsMin (#PCDATA)>
+<!ELEMENT LaneID EMPTY>
+<!ELEMENT LocationCode EMPTY>
+<!ELEMENT Mode (#PCDATA)>
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT PostalCode (#PCDATA)>
+<!ELEMENT PriceSheet (AccessorialTotal,SubTotal,Total,ContractId,ContractName,CarrierId,CarrierName,SCAC,Mode,Service,ServiceDays,Distance,Id,Address,ReasonCode,Status,LaneID,Zone,Charges)>
+<!ATTLIST PriceSheet
+	chargeModel NMTOKEN #REQUIRED
+	createDate CDATA #REQUIRED
+	isAllocated NMTOKEN #REQUIRED
+	isSelected NMTOKEN #REQUIRED
+	type NMTOKEN #REQUIRED
+>
+<!ELEMENT PriceSheets (PriceSheet)>
+<!ELEMENT Quantity (#PCDATA)>
+<!ELEMENT Rate (#PCDATA)>
+<!ELEMENT RateQualifier (#PCDATA)>
+<!ELEMENT RateResults (StatusCode,StatusMessage,PriceSheets)>
+<!ELEMENT ReasonCode EMPTY>
+<!ELEMENT ReferenceNumbers EMPTY>
+<!ELEMENT SCAC (#PCDATA)>
+<!ELEMENT Service (#PCDATA)>
+<!ELEMENT ServiceDays (#PCDATA)>
+<!ELEMENT StateProvince (#PCDATA)>
+<!ELEMENT Status EMPTY>
+<!ELEMENT StatusCode (#PCDATA)>
+<!ELEMENT StatusMessage (#PCDATA)>
+<!ELEMENT SubTotal (#PCDATA)>
+<!ELEMENT Total (#PCDATA)>
+<!ELEMENT Weight (#PCDATA)>
+<!ELEMENT Zone EMPTY>

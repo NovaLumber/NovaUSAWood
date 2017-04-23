@@ -1,0 +1,11 @@
+Example of Service Flags
+
+
+ <Constraints> 
+  <Mode /> 
+  <ServiceFlags>
+  <ServiceFlag code="RES2" /> 
+  <ServiceFlag code="ID2" /> 
+  <ServiceFlag code="LF2" /> 
+  </ServiceFlags>
+  </Constraints>

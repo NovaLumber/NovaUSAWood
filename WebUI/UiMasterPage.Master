@@ -1,0 +1,116 @@
+﻿<%@ Master Language="C#" AutoEventWireup="True" Codebehind="UiMasterPage.Master.cs" Inherits="WebUI.UiMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" runat="server" id="html">
+
+<head id="Head1" runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server" />
+    
+    <meta name="robots" content="index, follow" />
+    <meta name="verify-v1" content="QMg3/gD6OhdmhSuFHWmGcWsw4fkpb5+Rl6DiZTGsuh8=" />
+    
+    <asp:ContentPlaceHolder id="Header" runat="server" />
+    
+    <link rel="stylesheet" type="text/css" href="theme/jquery.lightbox-0.5.css" media="screen" />
+    <link href="http://fonts.googleapis.com/css?family=Merriweather:regular" rel="stylesheet" type="text/css" />
+    <link href="http://fonts.googleapis.com/css?family=Cabin:400,400italic,500,500italic,600,600italic,bold,bolditalic" rel="stylesheet" type="text/css" /> 
+
+    <link rel="shortcut icon" href="/images/site/plant.ico" type="image/vnd.microsoft.icon" />
+
+    <script type="text/javascript" src="/scripts/jquery-1.4.4.js"></script>
+    <script type="text/javascript" src="/scripts/javascript.js"></script>    
+    <script type="text/javascript" src="/scripts/swfobject.js"></script>
+    <script type="text/javascript" src="/scripts/jquery.lightbox-0.5.js"></script>
+    <!--<script type="text/javascript">
+        $('#slideshow').cycle({fx: 'fade', speed: 600, timeout: 5000, pause: 1, random: 0});
+    </script>-->
+    <script type="text/javascript"><!--//--><![CDATA[//><!--
+    sfHover = function () {
+        var sfEls = document.getElementById("nav").getElementsByTagName("LI");
+        for (var i = 0; i < sfEls.length; i++) {
+            sfEls[i].onmouseover = function () {
+                this.className += " sfhover";
+            }
+            sfEls[i].onmouseout = function () {
+                this.className = this.className.replace(new RegExp(" sfhover\\b"), "");
+            }
+        }
+    }
+    if (window.attachEvent) window.attachEvent("onload", sfHover);
+    //--><!]]></script>
+       <script type="text/javascript">
+           $(function () {
+               $('a.lightbox').lightBox();
+           });
+    </script>
+    
+    <!--  superfish -->
+    <link rel="stylesheet" type="text/css" href="theme/superfish.css" media="screen" />
+    <script type="text/javascript" src="scripts/superfish/superfish.js"></script>
+    <script type="text/javascript" src="scripts/superfish/supersubs.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function () {
+            $("ul.sf-menu").supersubs({
+                minWidth: 12,
+                maxWidth: 27,
+                extraWidth: 1
+            }).superfish();
+        });
+    </script>
+    <!--  end superfish -->
+           
+</head>
+<body id="body" runat="server">
+
+    <div id="innerwrapper">
+    
+        <div id="header">
+            <div id="headerContent">
+                <div id="logo">
+                    <a href="Default.aspx" title="Nova Home Page"><img alt="Nova USA Home" src="../images/brand/novalogo75.png" /></a>                    
+                </div>
+                <asp:Label style="color:#555; float:left; padding-top:38px; font-size:8px;" ID="logintext" runat="server" text="" ></asp:Label>
+                <ui:NavigationBar id="NavigationBar1" runat="server" />      
+            </div> <!-- /end headerContent -->
+        </div> <!-- /end header -->      
+   
+        <div id="pageContent">
+            <asp:ContentPlaceHolder ID="SideMenuPlaceHolder" runat="server"></asp:ContentPlaceHolder>
+            <div id="main"> 	 
+                <form id="MasterPageForm" runat="server"><asp:ContentPlaceHolder id="Content" runat="server" /></form>        
+                <div class="clearfix"></div>	
+            </div> <!-- end main -->                    
+        </div> <!-- end content -->
+                                   
+    </div> <!-- end inner wrapper -->    
+
+    <ui:FooterBar id="Footer" runat="server" />
+        
+    <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+        var pageTracker = _gat._getTracker("UA-3731904-2");
+        pageTracker._initData();
+        pageTracker._trackPageview();
+    </script>    
+
+    <script type="text/javascript">
+        var clicky_site_ids = clicky_site_ids || [];
+        clicky_site_ids.push(100791102);
+        (function () {
+            var s = document.createElement('script');
+            s.type = 'text/javascript';
+            s.async = true;
+            s.src = '//static.getclicky.com/js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(s);
+        })();
+    </script>
+    <noscript><p><img alt="Clicky" title="Get Clicky" width="1" height="1" src="//in.getclicky.com/100791102ns.gif" /></p></noscript>
+
+</body> 
+</html>     

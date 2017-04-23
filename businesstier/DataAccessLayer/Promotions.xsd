@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Promotions" targetNamespace="http://tempuri.org/Promotions.xsd" xmlns:mstns="http://tempuri.org/Promotions.xsd" xmlns="http://tempuri.org/Promotions.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Promotions" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="Promotions" msprop:Generator_DataSetName="Promotions">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Promotion" msprop:Generator_UserTableName="Promotion" msprop:Generator_RowDeletedName="PromotionRowDeleted" msprop:Generator_RowChangedName="PromotionRowChanged" msprop:Generator_RowClassName="PromotionRow" msprop:Generator_RowChangingName="PromotionRowChanging" msprop:Generator_RowEvArgName="PromotionRowChangeEvent" msprop:Generator_RowEvHandlerName="PromotionRowChangeEventHandler" msprop:Generator_TableClassName="PromotionDataTable" msprop:Generator_TableVarName="tablePromotion" msprop:Generator_RowDeletingName="PromotionRowDeleting" msprop:Generator_TablePropName="Promotion">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="promo_id" msprop:Generator_UserColumnName="promo_id" msprop:Generator_ColumnVarNameInTable="columnpromo_id" msprop:Generator_ColumnPropNameInRow="promo_id" msprop:Generator_ColumnPropNameInTable="promo_idColumn" type="xs:int" />
+              <xs:element name="title" msprop:Generator_UserColumnName="title" msprop:Generator_ColumnVarNameInTable="columntitle" msprop:Generator_ColumnPropNameInRow="title" msprop:Generator_ColumnPropNameInTable="titleColumn" type="xs:string" />
+              <xs:element name="subtitle" msprop:Generator_UserColumnName="subtitle" msprop:Generator_ColumnVarNameInTable="columnsubtitle" msprop:Generator_ColumnPropNameInRow="subtitle" msprop:Generator_ColumnPropNameInTable="subtitleColumn" type="xs:string" />
+              <xs:element name="FilterEntry_id" msprop:Generator_UserColumnName="FilterEntry_id" msprop:Generator_ColumnVarNameInTable="columnFilterEntry_id" msprop:Generator_ColumnPropNameInRow="FilterEntry_id" msprop:Generator_ColumnPropNameInTable="FilterEntry_idColumn" type="xs:int" />
+              <xs:element name="description" msprop:Generator_UserColumnName="description" msprop:Generator_ColumnVarNameInTable="columndescription" msprop:Generator_ColumnPropNameInRow="description" msprop:Generator_ColumnPropNameInTable="descriptionColumn" type="xs:string" />
+              <xs:element name="image" msprop:Generator_UserColumnName="image" msprop:Generator_ColumnVarNameInTable="columnimage" msprop:Generator_ColumnPropNameInRow="image" msprop:Generator_ColumnPropNameInTable="imageColumn" type="xs:string" />
+              <xs:element name="thumbImage" msprop:Generator_UserColumnName="thumbImage" msprop:Generator_ColumnPropNameInRow="thumbImage" msprop:Generator_ColumnVarNameInTable="columnthumbImage" msprop:Generator_ColumnPropNameInTable="thumbImageColumn" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint11">
+      <xs:selector xpath=".//mstns:Promotion" />
+      <xs:field xpath="mstns:promo_id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

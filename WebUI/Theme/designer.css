@@ -1,0 +1,644 @@
+﻿body,div,dl,dt,dd,ul,ol,li,h1,h2,h2,h4,h5,h6,hr,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+body{font-size:small; font-family: trebuchet ms, modern, sans-serif;}
+h1,h2,h2,h4,h5,h6{font-size:100%; font-weight:400;}
+q:before,q:after{content:'';}
+a:focus {outline: none;}
+ol, ul {list-style:none;}
+em {font-style:normal; font-weight:bold;}
+strong {font-weight: normal;}
+select,input,textarea{font:99% arial,helvetica ,sans-serif;}
+table{border-collapse:collapse;border-spacing:0;font-size:inherit;}
+caption,th{text-align:left;}
+pre,code{ font:115% monospace; font-size:100%;}
+a img, abbr, fieldset, acronym { border:0px}
+address,caption,cite,code,dfn,th,var{font-style:normal;font-weight:400;}
+ul {
+	padding-bottom:10px;
+}
+
+body {
+	background-color: white;
+}
+
+#dhtmltooltip
+{
+	position: absolute;
+	border: 1px solid #ccc;
+	padding: 2px 2px 2px 2px;
+	background-color: #fff;
+	visibility: hidden;
+	z-index: 99999;
+}
+#designer-choices
+{
+	width:900px;
+	color:#aaa;
+	text-align:left;
+	margin-top: 5px;		
+}
+#designer-choices input
+{
+	padding: 1px 1px 1px 1px;
+}
+#designer
+{
+	width:900px;
+	clear:both;
+	margin:auto auto auto auto;
+}
+#designer h1
+{
+	clear:both; 
+	padding: 5px 0px 7px 0px;
+	color:#aaa;
+}
+#accent-horizontal
+{
+	width:900px;
+	height:30px;
+	float:left;
+	background-image:url(../images/designer/accent-hz-setframe.gif);
+}
+#counter
+{
+	width:300px;
+	height:100px;
+	float:left;
+	background-image:url(../images/designer/counter-setframe.gif);	
+}
+#cabinet
+{
+	width:300px;
+	height:200px;
+	float:left;
+	background-image:url(../images/designer/cabinet-setframe.gif);
+}
+#paint1
+{
+	width:285px;
+	height:270px;
+	float:right;
+	background-image:url(../images/designer/paint1-setframe.gif);
+}
+#paint2
+{
+	width:285px;
+	height:270px;
+	float:right;
+	background-image:url(../images/designer/paint2-setframe.gif);
+}
+#molding
+{
+	width:570px;
+	height:30px;
+	float:right;
+	background-image:url(../images/designer/molding-setframe.gif);	
+}
+#flooring
+{
+	width:870px;
+	height:270px;
+	float:left;
+	background-image:url(../images/designer/flooring-setframe.gif);
+}
+#accent-vertical
+{
+	width:30px;
+	height:570px;
+	float:right;
+	background-image:url(../images/designer/accent-vt-setframe.gif);
+}
+#tile
+{
+	clear:both;
+	width:200px;
+	height:200px;
+	float:left;
+	margin-left:200px;
+	background-image:url(../images/designer/tile-setframe.gif);
+}
+#legend
+{
+	width:900px;
+	color:#aaa;
+	text-align:left;
+	margin-top: 5px;	
+}
+#footer
+{
+	width:900px;
+	height:100px;
+	color:#aaa;
+	text-align:right;
+	margin-top: 5px;
+}
+
+/* the overlayed element */ 
+.simple_overlay { 
+    display:none; 
+    z-index:10000; 
+    background-color:#eee; 
+    max-width:900px; 
+    padding: 3px 15px 5px 5px;
+    float:left;
+     
+    /* CSS3 styling for latest browsers */ 
+    -moz-box-shadow:0 0 90px 5px #000; 
+    -webkit-box-shadow: 0 0 90px #000;     
+} 
+ 
+/* close button positioned on upper right corner */ 
+.simple_overlay .close { 
+    background-image:url(../images/designer/close25.png); 
+    position:absolute; 
+    right:0px; 
+    top:0px; 
+    cursor:pointer; 
+    height:25px; 
+    width:25px; 
+}
+
+.clickers 
+{
+	height:50px;
+	width:50px;
+	background-color:#eee;
+	float: left;
+	margin: 3px;
+	border: solid 4px #eee;
+}
+.clickers:hover 
+{
+	border: solid 4px #ddd;
+}
+
+#floor1 { background-image: url(../images/designer/floor/acacia-natural.jpg); }
+#floor2 { background-image: url(../images/designer/floor/acacia-rosewood.jpg); }
+#floor3 { background-image: url(../images/designer/floor/amendoim.jpg); }
+#floor4 { background-image: url(../images/designer/floor/birch-natural.jpg); }
+#floor5 { background-image: url(../images/designer/floor/brazilian-cherry.jpg); }
+#floor6 { background-image: url(../images/designer/floor/cumaru.jpg); }
+#floor7 { background-image: url(../images/designer/floor/ipe.jpg); }
+#floor8 { background-image: url(../images/designer/floor/kurupayra.jpg); }
+#floor9 { background-image: url(../images/designer/floor/lapacho-ipe.jpg); }
+#floor10 { background-image: url(../images/designer/floor/massaranduba.jpg); }
+#floor11 { background-image: url(../images/designer/floor/para-rosewood.jpg); }
+#floor12 { background-image: url(../images/designer/floor/patagonian-rosewood.jpg); }
+#floor13 { background-image: url(../images/designer/floor/red-oak.jpg); }
+#floor14 { background-image: url(../images/designer/floor/tarara.jpg); }
+#floor15 { background-image: url(../images/designer/floor/tiete-rosewood.jpg); }
+#floor16 { background-image: url(../images/designer/floor/tigerwood.jpg); }
+
+#counter1 { background-image: url(../images/designer/counter/black-galaxy.jpg); }
+#counter2 { background-image: url(../images/designer/counter/cambrian-black.jpg); }
+#counter3 { background-image: url(../images/designer/counter/bianco-sardo-flamed.jpg); }
+#counter4 { background-image: url(../images/designer/counter/blue-pearl.jpg); }
+#counter5 { background-image: url(../images/designer/counter/gialo-veneziano.jpg); }
+#counter6 { background-image: url(../images/designer/counter/red-multi-color.jpg); }
+#counter7 { background-image: url(../images/designer/counter/silver-pearl.jpg); }
+#counter8 { background-image: url(../images/designer/counter/tan-brown.jpg); }
+#counter9 { background-image: url(../images/designer/counter/ubatuba.jpg); }
+#counter10 { background-image: url(../images/designer/counter/verde-crystal.jpg); }
+
+#cabinet1 { background-image: url(../images/designer/cabinet/red-oak-cab.jpg); }
+#cabinet2 { background-image: url(../images/designer/cabinet/maple-cab.JPG); }
+#cabinet3 { background-image: url(../images/designer/cabinet/walnut-cab.JPG); }
+#cabinet4 { background-image: url(../images/designer/cabinet/fir-cab.JPG); }
+#cabinet5 { background-image: url(../images/designer/cabinet/cherry-cab.jpg); }
+#cabinet6 { background-image: url(../images/designer/cabinet/white-cab.JPG); }
+#cabinet7 { background-image: url(../images/designer/cabinet/almond-cab.JPG); }
+#cabinet8 { background-image: url(../images/designer/cabinet/knotty-pine-cab.JPG); }
+#cabinet9 { background-image: url(../images/designer/cabinet/white-oak-cab.jpg); }
+#cabinet10 { background-image: url(../images/designer/cabinet/white-oak-tuscany-cab.JPG); }
+#cabinet11 { background-image: url(../images/designer/cabinet/spruce-cab.JPG); }
+
+#molding1 { background-image: url(../images/designer/molding/white-molding.jpg); }
+#molding2 { background-image: url(../images/designer/molding/almond-molding.jpg); }
+#molding3 { background-image: url(../images/designer/molding/red-oak-molding.jpg); }
+#molding4 { background-image: url(../images/designer/molding/maple-molding.jpg); }
+#molding5 { background-image: url(../images/designer/molding/cherry-molding.jpg); }
+#molding6 { background-image: url(../images/designer/molding/mahogany-molding.jpg); }
+#molding7 { background-image: url(../images/designer/molding/fir-molding.jpg); }
+
+#tile1 { background-image: url(../images/designer/tile/no-tile.jpg); }
+#tile2 { background-image: url(../images/designer/tile/tile-gray-1.JPG); }
+
+
+/* Espresso Blends - Devine */
+#accent1 { background-color:#B9A36B; }
+#accent2 { background-color:#AC9C69; }
+#accent3 { background-color:#82917B; }
+#accent4 { background-color:#8E8C5C; }
+#accent5 { background-color:#AA9D5C; }
+#accent6 { background-color:#DACEB6; }
+#accent7 { background-color:#A1917F; }
+#accent8 { background-color:#8C8D4A; }
+#accent9 { background-color:#564422; }
+#accent10 { background-color:#BAA872; }
+
+#paint1-1 { background-color:#B9A36B; }
+#paint1-2 { background-color:#AC9C69; }
+#paint1-3 { background-color:#82917B; }
+#paint1-4 { background-color:#8E8C5C; }
+#paint1-5 { background-color:#AA9D5C; }
+#paint1-6 { background-color:#DACEB6; }
+#paint1-7 { background-color:#A1917F; }
+#paint1-8 { background-color:#8C8D4A; }
+#paint1-9 { background-color:#564422; }
+#paint1-10 { background-color:#BAA872; }
+
+#paint2-1 { background-color:#B9A36B; }
+#paint2-2 { background-color:#AC9C69; }
+#paint2-3 { background-color:#82917B; }
+#paint2-4 { background-color:#8E8C5C; }
+#paint2-5 { background-color:#AA9D5C; }
+#paint2-6 { background-color:#DACEB6; }
+#paint2-7 { background-color:#A1917F; }
+#paint2-8 { background-color:#8C8D4A; }
+#paint2-9 { background-color:#564422; }
+#paint2-10 { background-color:#BAA872; }
+
+/* Natural Blondes - Devine */
+#accent11 { background-color:#FFF9C1; }
+#accent12 { background-color:#F1EC9F; }
+#accent13 { background-color:#E0CA73; }
+#accent14 { background-color:#ECE399; }
+#accent15 { background-color:#E6DB6B; }
+#accent16 { background-color:#C78F3F; }
+#accent17 { background-color:#D3C17F; }
+#accent18 { background-color:#E0BD62; }
+#accent19 { background-color:#CA9C42; }
+#accent20 { background-color:#E0BC4E; }
+#accent21 { background-color:#F5EA95; }
+#accent22 { background-color:#FFF696; }
+
+#paint1-11 { background-color:#FFF9C1; }
+#paint1-12 { background-color:#F1EC9F; }
+#paint1-13 { background-color:#E0CA73; }
+#paint1-14 { background-color:#ECE399; }
+#paint1-15 { background-color:#E6DB6B; }
+#paint1-16 { background-color:#C78F3F; }
+#paint1-17 { background-color:#D3C17F; }
+#paint1-18 { background-color:#E0BD62; }
+#paint1-19 { background-color:#CA9C42; }
+#paint1-20 { background-color:#E0BC4E; }
+#paint1-21 { background-color:#F5EA95; }
+#paint1-22 { background-color:#FFF696; }
+
+#paint2-11 { background-color:#FFF9C1; }
+#paint2-12 { background-color:#F1EC9F; }
+#paint2-13 { background-color:#E0CA73; }
+#paint2-14 { background-color:#ECE399; }
+#paint2-15 { background-color:#E6DB6B; }
+#paint2-16 { background-color:#C78F3F; }
+#paint2-17 { background-color:#D3C17F; }
+#paint2-18 { background-color:#E0BD62; }
+#paint2-19 { background-color:#CA9C42; }
+#paint2-20 { background-color:#E0BC4E; }
+#paint2-21 { background-color:#F5EA95; }
+#paint2-22 { background-color:#FFF696; }
+
+/* Cool Grasses & Evergreens - Devine */
+#accent23 { background-color:#829680; }
+#accent24 { background-color:#AEB196; }
+#accent25 { background-color:#A9BB89; }
+#accent26 { background-color:#436152; }
+#accent27 { background-color:#476F56; }
+#accent28 { background-color:#668461; }
+#accent29 { background-color:#526653; }
+#accent30 { background-color:#D6E4C3; }
+#accent31 { background-color:#DCE1C1; }
+#accent32 { background-color:#B8C49E; }
+
+#paint1-23 { background-color:#829680; }
+#paint1-24 { background-color:#AEB196; }
+#paint1-25 { background-color:#A9BB89; }
+#paint1-26 { background-color:#436152; }
+#paint1-27 { background-color:#476F56; }
+#paint1-28 { background-color:#668461; }
+#paint1-29 { background-color:#526653; }
+#paint1-30 { background-color:#D6E4C3; }
+#paint1-31 { background-color:#DCE1C1; }
+#paint1-32 { background-color:#B8C49E; }
+
+#paint2-23 { background-color:#829680; }
+#paint2-24 { background-color:#AEB196; }
+#paint2-25 { background-color:#A9BB89; }
+#paint2-26 { background-color:#436152; }
+#paint2-27 { background-color:#476F56; }
+#paint2-28 { background-color:#668461; }
+#paint2-29 { background-color:#526653; }
+#paint2-30 { background-color:#D6E4C3; }
+#paint2-31 { background-color:#DCE1C1; }
+#paint2-32 { background-color:#B8C49E; }
+
+/* Valley Vineyards & Spice - Devine */
+#accent33 { background-color:#8D2824; }
+#accent34 { background-color:#803F32; }
+#accent35 { background-color:#73391E; }
+#accent36 { background-color:#7D332D; }
+#accent37 { background-color:#6F2127; }
+#accent38 { background-color:#602524; }
+#accent39 { background-color:#552A36; }
+#accent40 { background-color:#7F3C3E; }
+#accent41 { background-color:#6E4348; }
+#accent42 { background-color:#752E21; }
+#accent43 { background-color:#9E2F34; }
+#accent44 { background-color:#AD4A3A; }
+
+#paint1-33 { background-color:#8D2824; }
+#paint1-34 { background-color:#803F32; }
+#paint1-35 { background-color:#73391E; }
+#paint1-36 { background-color:#7D332D; }
+#paint1-37 { background-color:#6F2127; }
+#paint1-38 { background-color:#602524; }
+#paint1-39 { background-color:#552A36; }
+#paint1-40 { background-color:#7F3C3E; }
+#paint1-41 { background-color:#6E4348; }
+#paint1-42 { background-color:#752E21; }
+#paint1-43 { background-color:#9E2F34; }
+#paint1-44 { background-color:#AD4A3A; }
+
+#paint2-33 { background-color:#8D2824; }
+#paint2-34 { background-color:#803F32; }
+#paint2-35 { background-color:#73391E; }
+#paint2-36 { background-color:#7D332D; }
+#paint2-37 { background-color:#6F2127; }
+#paint2-38 { background-color:#602524; }
+#paint2-39 { background-color:#552A36; }
+#paint2-40 { background-color:#7F3C3E; }
+#paint2-41 { background-color:#6E4348; }
+#paint2-42 { background-color:#752E21; }
+#paint2-43 { background-color:#9E2F34; }
+#paint2-44 { background-color:#AD4A3A; }
+
+/* Silver Skies - Devine */
+#accent45 { background-color:#9F8D8E; }
+#accent46 { background-color:#A58F94; }
+#accent47 { background-color:#9F8C8F; }
+#accent48 { background-color:#6D4B5A; }
+#accent49 { background-color:#CBB3A1; }
+#accent50 { background-color:#C2C6C6; }
+#accent51 { background-color:#979CA3; }
+#accent52 { background-color:#767A86; }
+#accent53 { background-color:#E9E8EA; }
+#accent54 { background-color:#DEDADC; }
+#accent55 { background-color:#E4E7E8; }
+#accent56 { background-color:#9897A4; }
+
+#paint1-45 { background-color:#9F8D8E; }
+#paint1-46 { background-color:#A58F94; }
+#paint1-47 { background-color:#9F8C8F; }
+#paint1-48 { background-color:#6D4B5A; }
+#paint1-49 { background-color:#CBB3A1; }
+#paint1-50 { background-color:#C2C6C6; }
+#paint1-51 { background-color:#979CA3; }
+#paint1-52 { background-color:#767A86; }
+#paint1-53 { background-color:#E9E8EA; }
+#paint1-54 { background-color:#DEDADC; }
+#paint1-55 { background-color:#E4E7E8; }
+#paint1-56 { background-color:#9897A4; }
+
+#paint2-45 { background-color:#9F8D8E; }
+#paint2-46 { background-color:#A58F94; }
+#paint2-47 { background-color:#9F8C8F; }
+#paint2-48 { background-color:#6D4B5A; }
+#paint2-49 { background-color:#CBB3A1; }
+#paint2-50 { background-color:#C2C6C6; }
+#paint2-51 { background-color:#979CA3; }
+#paint2-52 { background-color:#767A86; }
+#paint2-53 { background-color:#E9E8EA; }
+#paint2-54 { background-color:#DEDADC; }
+#paint2-55 { background-color:#E4E7E8; }
+#paint2-56 { background-color:#9897A4; }
+
+/* Ocean Tidepools - Devine */
+#accent57 { background-color:#CCDCE4; }
+#accent58 { background-color:#DCE3CC; }
+#accent59 { background-color:#DEE7D5; }
+#accent60 { background-color:#BED0C2; }
+#accent61 { background-color:#648C80; }
+#accent62 { background-color:#5C7A8C; }
+#accent63 { background-color:#475B6F; }
+#accent64 { background-color:#566688; }
+#accent65 { background-color:#6C7D99; }
+#accent66 { background-color:#8395B2; }
+#accent67 { background-color:#9BABBE; }
+#accent68 { background-color:#B1BBC3; }
+
+#paint1-57 { background-color:#CCDCE4; }
+#paint1-58 { background-color:#DCE3CC; }
+#paint1-59 { background-color:#DEE7D5; }
+#paint1-60 { background-color:#BED0C2; }
+#paint1-61 { background-color:#648C80; }
+#paint1-62 { background-color:#5C7A8C; }
+#paint1-63 { background-color:#475B6F; }
+#paint1-64 { background-color:#566688; }
+#paint1-65 { background-color:#6C7D99; }
+#paint1-66 { background-color:#8395B2; }
+#paint1-67 { background-color:#9BABBE; }
+#paint1-68 { background-color:#B1BBC3; }
+
+#paint2-57 { background-color:#CCDCE4; }
+#paint2-58 { background-color:#DCE3CC; }
+#paint2-59 { background-color:#DEE7D5; }
+#paint2-60 { background-color:#BED0C2; }
+#paint2-61 { background-color:#648C80; }
+#paint2-62 { background-color:#5C7A8C; }
+#paint2-63 { background-color:#475B6F; }
+#paint2-64 { background-color:#566688; }
+#paint2-65 { background-color:#6C7D99; }
+#paint2-66 { background-color:#8395B2; }
+#paint2-67 { background-color:#9BABBE; }
+#paint2-68 { background-color:#B1BBC3; }
+
+/* Sweet & Hot Beans - Devine */
+#accent69 { background-color:#FFF1CA; }
+#accent70 { background-color:#C8F0D0; }
+#accent71 { background-color:#B0D0E1; }
+#accent72 { background-color:#FFEAC4; }
+#accent73 { background-color:#FCD471; }
+#accent74 { background-color:#8A5A8B; }
+#accent75 { background-color:#373E61; }
+#accent76 { background-color:#EBD670; }
+#accent77 { background-color:#94A74A; }
+#accent78 { background-color:#942F5C; }
+#accent79 { background-color:#FAD0D6; }
+#accent80 { background-color:#EBC6F5; }
+
+#paint1-69 { background-color:#FFF1CA; }
+#paint1-70 { background-color:#C8F0D0; }
+#paint1-71 { background-color:#B0D0E1; }
+#paint1-72 { background-color:#FFEAC4; }
+#paint1-73 { background-color:#FCD471; }
+#paint1-74 { background-color:#8A5A8B; }
+#paint1-75 { background-color:#373E61; }
+#paint1-76 { background-color:#EBD670; }
+#paint1-77 { background-color:#94A74A; }
+#paint1-78 { background-color:#942F5C; }
+#paint1-79 { background-color:#FAD0D6; }
+#paint1-80 { background-color:#EBC6F5; }
+
+#paint2-69 { background-color:#FFF1CA; }
+#paint2-70 { background-color:#C8F0D0; }
+#paint2-71 { background-color:#B0D0E1; }
+#paint2-72 { background-color:#FFEAC4; }
+#paint2-73 { background-color:#FCD471; }
+#paint2-74 { background-color:#8A5A8B; }
+#paint2-75 { background-color:#373E61; }
+#paint2-76 { background-color:#EBD670; }
+#paint2-77 { background-color:#94A74A; }
+#paint2-78 { background-color:#942F5C; }
+#paint2-79 { background-color:#FAD0D6; }
+#paint2-80 { background-color:#EBC6F5; }
+
+/* Pebbles & Creams - Devine */
+#accent81 { background-color:#EAE3C6; }
+#accent82 { background-color:#EBE8C7; }
+#accent83 { background-color:#E5DFBF; }
+#accent84 { background-color:#E8E0B9; }
+#accent85 { background-color:#F3F2DD; }
+#accent86 { background-color:#EDE39C; }
+#accent87 { background-color:#EFEAC2; }
+#accent88 { background-color:#BABE9B; }
+#accent89 { background-color:#EAE9BB; }
+#accent90 { background-color:#EBE7CC; }
+#accent91 { background-color:#ECF0CF; }
+#accent92 { background-color:#F6F5F0; }
+
+#paint1-81 { background-color:#EAE3C6; }
+#paint1-82 { background-color:#EBE8C7; }
+#paint1-83 { background-color:#E5DFBF; }
+#paint1-84 { background-color:#E8E0B9; }
+#paint1-85 { background-color:#F3F2DD; }
+#paint1-86 { background-color:#EDE39C; }
+#paint1-87 { background-color:#EFEAC2; }
+#paint1-88 { background-color:#BABE9B; }
+#paint1-89 { background-color:#EAE9BB; }
+#paint1-90 { background-color:#EBE7CC; }
+#paint1-91 { background-color:#ECF0CF; }
+#paint1-92 { background-color:#F6F5F0; }
+
+#paint2-81 { background-color:#EAE3C6; }
+#paint2-82 { background-color:#EBE8C7; }
+#paint2-83 { background-color:#E5DFBF; }
+#paint2-84 { background-color:#E8E0B9; }
+#paint2-85 { background-color:#F3F2DD; }
+#paint2-86 { background-color:#EDE39C; }
+#paint2-87 { background-color:#EFEAC2; }
+#paint2-88 { background-color:#BABE9B; }
+#paint2-89 { background-color:#EAE9BB; }
+#paint2-90 { background-color:#EBE7CC; }
+#paint2-91 { background-color:#ECF0CF; }
+#paint2-92 { background-color:#F6F5F0; }
+
+/* Pacific Trail Mix - Devine */
+#accent93 { background-color:#DBDBB5; }
+#accent94 { background-color:#C1C593; }
+#accent95 { background-color:#D9B67C; }
+#accent96 { background-color:#B0BFA0; }
+#accent97 { background-color:#ADB8A8; }
+#accent98 { background-color:#CAC08F; }
+#accent99 { background-color:#E3DFAF; }
+#accent100 { background-color:#DCC47C; }
+#accent101 { background-color:#D7C185; }
+#accent102 { background-color:#D9CB80; }
+#accent103 { background-color:#D2CEB3; }
+
+#paint1-93 { background-color:#DBDBB5; }
+#paint1-94 { background-color:#C1C593; }
+#paint1-95 { background-color:#D9B67C; }
+#paint1-96 { background-color:#B0BFA0; }
+#paint1-97 { background-color:#ADB8A8; }
+#paint1-98 { background-color:#CAC08F; }
+#paint1-99 { background-color:#E3DFAF; }
+#paint1-100 { background-color:#DCC47C; }
+#paint1-101 { background-color:#D7C185; }
+#paint1-102 { background-color:#D9CB80; }
+#paint1-103 { background-color:#D2CEB3; }
+
+#paint2-93 { background-color:#DBDBB5; }
+#paint2-94 { background-color:#C1C593; }
+#paint2-95 { background-color:#D9B67C; }
+#paint2-96 { background-color:#B0BFA0; }
+#paint2-97 { background-color:#ADB8A8; }
+#paint2-98 { background-color:#CAC08F; }
+#paint2-99 { background-color:#E3DFAF; }
+#paint2-100 { background-color:#DCC47C; }
+#paint2-101 { background-color:#D7C185; }
+#paint2-102 { background-color:#D9CB80; }
+#paint2-103 { background-color:#D2CEB3; }
+
+/* Desert Lights - Devine */
+#accent104 { background-color:#B86850; }
+#accent105 { background-color:#C48661; }
+#accent106 { background-color:#F1C473; }
+#accent107 { background-color:#BC5741; }
+#accent108 { background-color:#B57843; }
+#accent109 { background-color:#C78657; }
+#accent110 { background-color:#E5BD7F; }
+#accent111 { background-color:#E6D7AC; }
+#accent112 { background-color:#D2BA7C; }
+#accent113 { background-color:#C39B7C; }
+
+#paint1-104 { background-color:#B86850; }
+#paint1-105 { background-color:#C48661; }
+#paint1-106 { background-color:#F1C473; }
+#paint1-107 { background-color:#BC5741; }
+#paint1-108 { background-color:#B57843; }
+#paint1-109 { background-color:#C78657; }
+#paint1-110 { background-color:#E5BD7F; }
+#paint1-111 { background-color:#E6D7AC; }
+#paint1-112 { background-color:#D2BA7C; }
+#paint1-113 { background-color:#C39B7C; }
+
+#paint2-104 { background-color:#B86850; }
+#paint2-105 { background-color:#C48661; }
+#paint2-106 { background-color:#F1C473; }
+#paint2-107 { background-color:#BC5741; }
+#paint2-108 { background-color:#B57843; }
+#paint2-109 { background-color:#C78657; }
+#paint2-110 { background-color:#E5BD7F; }
+#paint2-111 { background-color:#E6D7AC; }
+#paint2-112 { background-color:#D2BA7C; }
+#paint2-113 { background-color:#C39B7C; }
+
+/* Woven Tattles & Spun Tales - Devine */
+#accent114 { background-color:#D0C293; }
+#accent115 { background-color:#8D3833; }
+#accent116 { background-color:#667E5E; }
+#accent117 { background-color:#E3C474; }
+#accent118 { background-color:#472C3B; }
+#accent119 { background-color:#444766; }
+#accent120 { background-color:#1B1612; }
+#accent121 { background-color:#F4F3F1; }
+#accent122 { background-color:#3C382D; }
+#accent123 { background-color:#3F3D14; }
+#accent124 { background-color:#6F3241; }
+#accent125 { background-color:#4C4F58; }
+
+#paint1-114 { background-color:#D0C293; }
+#paint1-115 { background-color:#8D3833; }
+#paint1-116 { background-color:#667E5E; }
+#paint1-117 { background-color:#E3C474; }
+#paint1-118 { background-color:#472C3B; }
+#paint1-119 { background-color:#444766; }
+#paint1-120 { background-color:#1B1612; }
+#paint1-121 { background-color:#F4F3F1; }
+#paint1-122 { background-color:#3C382D; }
+#paint1-123 { background-color:#3F3D14; }
+#paint1-124 { background-color:#6F3241; }
+#paint1-125 { background-color:#4C4F58; }
+
+#paint2-114 { background-color:#D0C293; }
+#paint2-115 { background-color:#8D3833; }
+#paint2-116 { background-color:#667E5E; }
+#paint2-117 { background-color:#E3C474; }
+#paint2-118 { background-color:#472C3B; }
+#paint2-119 { background-color:#444766; }
+#paint2-120 { background-color:#1B1612; }
+#paint2-121 { background-color:#F4F3F1; }
+#paint2-122 { background-color:#3C382D; }
+#paint2-123 { background-color:#3F3D14; }
+#paint2-124 { background-color:#6F3241; }
+#paint2-125 { background-color:#4C4F58; }

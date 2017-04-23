@@ -1,0 +1,15 @@
+BEGIN:VCARD
+VERSION:2.1
+N:Bruce;David
+FN:David Bruce
+ORG:Nova USA Wood Products, LLC
+TITLE:Sales - Northeast USA
+TEL;WORK;VOICE:(603) 345-6000
+ADR;WORK;ENCODING=QUOTED-PRINTABLE:;;542 W. Main St.=0D=0AP. O. Box 319;Tilton;NH;03276;United States of Americ=
+a
+LABEL;WORK;ENCODING=QUOTED-PRINTABLE:542 W. Main St.=0D=0AP. O. Box 319=0D=0ATilton, NH 03276=0D=0AUnited States =
+of America
+URL;WORK:http://novausawood.com
+EMAIL;PREF;INTERNET:daveb@novausawood.com
+REV:20090211T132947Z
+END:VCARD

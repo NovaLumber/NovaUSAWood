@@ -1,0 +1,10 @@
+C:\Inetpub\wwwroot\Utility\bin\Release\Utility.dll
+C:\Inetpub\wwwroot\Utility\bin\Release\Utility.pdb
+C:\Inetpub\wwwroot\Utility\obj\Release\ResolveAssemblyReference.cache
+C:\Inetpub\wwwroot\Utility\obj\Release\Utility.dll
+C:\Inetpub\wwwroot\Utility\obj\Release\Utility.pdb
+C:\Inetpub\wwwroot\Utility\bin\Debug\Utility.dll
+C:\Inetpub\wwwroot\Utility\bin\Debug\Utility.pdb
+C:\Inetpub\wwwroot\Utility\obj\Debug\ResolveAssemblyReference.cache
+C:\Inetpub\wwwroot\Utility\obj\Debug\Utility.dll
+C:\Inetpub\wwwroot\Utility\obj\Debug\Utility.pdb
