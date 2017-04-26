@@ -42,3 +42,12 @@ C:\Nova\NovaUSAWood\WebUI\bin\BusinessTier.pdb
 C:\Nova\NovaUSAWood\WebUI\bin\BusinessTier.dll.config
 C:\Nova\NovaUSAWood\WebUI\obj\Debug\WebUI.dll
 C:\Nova\NovaUSAWood\WebUI\obj\Debug\WebUI.pdb
+D:\NovaLumberRepo\NovaUSAWood\WebUI\obj\Debug\WebUI.csprojResolveAssemblyReference.cache
+D:\NovaLumberRepo\NovaUSAWood\WebUI\bin\WebUI.dll.config
+D:\NovaLumberRepo\NovaUSAWood\WebUI\bin\WebUI.dll
+D:\NovaLumberRepo\NovaUSAWood\WebUI\bin\WebUI.pdb
+D:\NovaLumberRepo\NovaUSAWood\WebUI\bin\BusinessTier.dll
+D:\NovaLumberRepo\NovaUSAWood\WebUI\bin\BusinessTier.pdb
+D:\NovaLumberRepo\NovaUSAWood\WebUI\bin\BusinessTier.dll.config
+D:\NovaLumberRepo\NovaUSAWood\WebUI\obj\Debug\WebUI.dll
+D:\NovaLumberRepo\NovaUSAWood\WebUI\obj\Debug\WebUI.pdb

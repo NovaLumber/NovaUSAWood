@@ -31,3 +31,9 @@ C:\Nova\NovaUSAWood\BusinessTier\bin\Debug\BusinessTier.dll
 C:\Nova\NovaUSAWood\BusinessTier\bin\Debug\BusinessTier.pdb
 C:\Nova\NovaUSAWood\BusinessTier\obj\Debug\BusinessTier.dll
 C:\Nova\NovaUSAWood\BusinessTier\obj\Debug\BusinessTier.pdb
+D:\NovaLumberRepo\NovaUSAWood\BusinessTier\bin\Debug\BusinessTier.dll.config
+D:\NovaLumberRepo\NovaUSAWood\BusinessTier\bin\Debug\BusinessTier.dll
+D:\NovaLumberRepo\NovaUSAWood\BusinessTier\bin\Debug\BusinessTier.pdb
+D:\NovaLumberRepo\NovaUSAWood\BusinessTier\obj\Debug\BusinessTier.dll
+D:\NovaLumberRepo\NovaUSAWood\BusinessTier\obj\Debug\BusinessTier.pdb
+D:\NovaLumberRepo\NovaUSAWood\BusinessTier\obj\Debug\BusinessTier.csprojResolveAssemblyReference.cache

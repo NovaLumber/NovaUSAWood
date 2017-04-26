@@ -79,6 +79,7 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Controls\email-signup.ascx" />
     <Content Include="elemental-advantage.aspx" />
     <Content Include="fire-rated-hardwood-decking.aspx" />
     <Content Include="hardwood-decking-installation.aspx" />
@@ -151,6 +152,13 @@
     </Compile>
     <Compile Include="Controls\DeckingNavigation.ascx.designer.cs">
       <DependentUpon>DeckingNavigation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\email-signup.ascx.cs">
+      <DependentUpon>email-signup.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\email-signup.ascx.designer.cs">
+      <DependentUpon>email-signup.ascx</DependentUpon>
     </Compile>
     <Compile Include="Controls\FilterManager.ascx.cs">
       <DependentUpon>FilterManager.ascx</DependentUpon>

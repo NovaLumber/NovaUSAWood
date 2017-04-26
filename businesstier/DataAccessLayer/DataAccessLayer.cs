@@ -2240,5 +2240,40 @@ namespace BusinessTier.DataAccessLayer
 
             return st;
         }
+
+        public int RegisterEmail(string email, string zipcode, string interests, string ip_address)
+        {
+            OpenConnection();
+
+            SqlCommand cmd = new SqlCommand("SP_RegisterEmail", DbConnection);
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            SqlParameter param1 = new SqlParameter("@email", SqlDbType.VarChar);
+            param1.Value = email;
+            cmd.Parameters.Add(param1);
+
+            SqlParameter param2 = new SqlParameter("@zipcode", SqlDbType.VarChar);
+            param2.Value = zipcode;
+            cmd.Parameters.Add(param2);
+
+            SqlParameter param3 = new SqlParameter("@interests", SqlDbType.VarChar);
+            param3.Value = interests;
+            cmd.Parameters.Add(param3);
+
+            SqlParameter param4 = new SqlParameter("@ip_address", SqlDbType.VarChar);
+            param4.Value = ip_address;
+            cmd.Parameters.Add(param4);
+
+            SqlParameter param5 = new SqlParameter("@returncode", SqlDbType.Int);
+            param5.Direction = ParameterDirection.ReturnValue;
+            param5.IsNullable = false;
+            cmd.Parameters.Add(param5);
+
+            cmd.ExecuteScalar();
+            cmd.Dispose();
+
+            return (int)param5.Value;
+
+        }
     }
 }
