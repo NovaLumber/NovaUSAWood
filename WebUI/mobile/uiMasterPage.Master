@@ -47,11 +47,13 @@
     }
     if (window.attachEvent) window.attachEvent("onload", sfHover);
     //--><!]]></script>
-       <script type="text/javascript">
+  
+    <!-- TEST REMOVING LIGHT BOX -->
+<%--    <script type="text/javascript">
     $(function() {
 	$('a.lightbox').lightBox();
 });
-    </script>
+    </script>--%>
     
     <!--  superfish -->
     <link rel="stylesheet" type="text/css" href="theme/superfish.css" media="screen" />

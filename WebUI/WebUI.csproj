@@ -25,7 +25,7 @@
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <OldToolsVersion>14.0</OldToolsVersion>
-    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
@@ -67,6 +67,7 @@
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.Extensions" />
@@ -84,6 +85,8 @@
     <Content Include="fire-rated-hardwood-decking.aspx" />
     <Content Include="hardwood-decking-installation.aspx" />
     <Content Include="hardwood-siding-products.aspx" />
+    <Content Include="images\next.png" />
+    <Content Include="images\prev.png" />
     <Content Include="mobile\batu-decking.aspx" />
     <Content Include="mobile\cambara-decking.aspx" />
     <Content Include="mobile\contact.aspx" />
@@ -99,6 +102,7 @@
     <Content Include="mobile\prefinished-flooring.aspx" />
     <Content Include="mobile\tigerwood-decking.aspx" />
     <Content Include="mobile\unfinished-flooring.aspx" />
+    <Content Include="photo-gallery-next.aspx" />
     <Content Include="photo-gallery.aspx" />
     <Content Include="ProductDetails.aspx" />
   </ItemGroup>
@@ -691,6 +695,13 @@
     </Compile>
     <Compile Include="nova-forest-brazil.aspx.designer.cs">
       <DependentUpon>nova-forest-brazil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="photo-gallery-next.aspx.cs">
+      <DependentUpon>photo-gallery-next.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="photo-gallery-next.aspx.designer.cs">
+      <DependentUpon>photo-gallery-next.aspx</DependentUpon>
     </Compile>
     <Compile Include="photo-gallery.aspx.cs">
       <DependentUpon>photo-gallery.aspx</DependentUpon>
@@ -3838,6 +3849,8 @@
     <Content Include="region-decking.aspx" />
     <Content Include="region-flooring.aspx" />
     <Content Include="retail-dealer.aspx" />
+    <Content Include="scripts\bootstrap.js" />
+    <Content Include="scripts\bootstrap.min.js" />
     <Content Include="scripts\javascript.js" />
     <Content Include="kiln-sticks.aspx" />
     <Content Include="massaranduba-decking.aspx" />
@@ -3853,10 +3866,15 @@
     <Content Include="products_unfin.aspx" />
     <Content Include="request.aspx" />
     <Content Include="scripts\designer.js" />
+    <None Include="scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="scripts\jquery-1.10.2.js" />
+    <Content Include="scripts\jquery-1.10.2.min.js" />
     <Content Include="scripts\jquery-1.4.4.js" />
     <Content Include="scripts\jquery.cookie.js" />
     <Content Include="scripts\jquery.lightbox-0.5.js" />
     <Content Include="scripts\jquery.tools.min.js" />
+    <Content Include="scripts\lightbox-plus-jquery.min.js" />
+    <Content Include="scripts\lightbox.min.js" />
     <Content Include="scripts\superfish\superfish.js" />
     <Content Include="scripts\superfish\supersubs.js" />
     <Content Include="scripts\swfobject.js" />
@@ -3904,6 +3922,7 @@
     <Content Include="Theme\ie-old.css" />
     <Content Include="Theme\ie.css" />
     <Content Include="Theme\ipe-740x375.jpg" />
+    <Content Include="Theme\lightbox.min.css" />
     <Content Include="Theme\management-plan2-200.jpg" />
     <Content Include="Theme\map-europe.jpg" />
     <Content Include="Theme\map.jpg" />

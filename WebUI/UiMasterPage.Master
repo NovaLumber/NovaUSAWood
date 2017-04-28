@@ -1,7 +1,7 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="True" Codebehind="UiMasterPage.Master.cs" Inherits="WebUI.UiMasterPage" %>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
+<%--<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">--%>
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" runat="server" id="html">
 
 <head id="Head1" runat="server">
@@ -11,22 +11,31 @@
     
     <meta name="robots" content="index, follow" />
     <meta name="verify-v1" content="QMg3/gD6OhdmhSuFHWmGcWsw4fkpb5+Rl6DiZTGsuh8=" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script> 
     
-    <asp:ContentPlaceHolder id="Header" runat="server" />
+    <asp:ContentPlaceHolder id="Header" runat="server">        
+    </asp:ContentPlaceHolder>
     
     <link rel="stylesheet" type="text/css" href="theme/jquery.lightbox-0.5.css" media="screen" />
     <link href="http://fonts.googleapis.com/css?family=Merriweather:regular" rel="stylesheet" type="text/css" />
     <link href="http://fonts.googleapis.com/css?family=Cabin:400,400italic,500,500italic,600,600italic,bold,bolditalic" rel="stylesheet" type="text/css" /> 
 
     <link rel="shortcut icon" href="/images/site/plant.ico" type="image/vnd.microsoft.icon" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
-    <script type="text/javascript" src="/scripts/jquery-1.4.4.js"></script>
+<%--    <script type="text/javascript" src="scripts/jquery-1.10.2.min.js"></script>--%>
     <script type="text/javascript" src="/scripts/javascript.js"></script>    
     <script type="text/javascript" src="/scripts/swfobject.js"></script>
-    <script type="text/javascript" src="/scripts/jquery.lightbox-0.5.js"></script>
+<%--    <script type="text/javascript" src="/scripts/jquery.lightbox-0.5.js"></script>--%>
     <!--<script type="text/javascript">
         $('#slideshow').cycle({fx: 'fade', speed: 600, timeout: 5000, pause: 1, random: 0});
     </script>-->
+
+    
+    <asp:ContentPlaceHolder ID="LocalScripts" runat="server">
+    </asp:ContentPlaceHolder>
+    
+
     <script type="text/javascript"><!--//--><![CDATA[//><!--
     sfHover = function () {
         var sfEls = document.getElementById("nav").getElementsByTagName("LI");
@@ -49,6 +58,7 @@
     
     <!--  superfish -->
     <link rel="stylesheet" type="text/css" href="theme/superfish.css" media="screen" />
+    <script type="text/javascript" src="scripts/jquery-1.4.4.js"></script>
     <script type="text/javascript" src="scripts/superfish/superfish.js"></script>
     <script type="text/javascript" src="scripts/superfish/supersubs.js"></script>
     <script type="text/javascript">
@@ -64,7 +74,6 @@
            
 </head>
 <body id="body" runat="server">
-
     <div id="innerwrapper">
     
         <div id="header">
@@ -111,6 +120,6 @@
         })();
     </script>
     <noscript><p><img alt="Clicky" title="Get Clicky" width="1" height="1" src="//in.getclicky.com/100791102ns.gif" /></p></noscript>
-
+    <asp:ContentPlaceHolder ID="FooterScripts" runat="server"></asp:ContentPlaceHolder>
 </body> 
 </html>     

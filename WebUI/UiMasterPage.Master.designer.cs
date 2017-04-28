@@ -49,6 +49,15 @@ namespace WebUI {
         protected global::System.Web.UI.WebControls.ContentPlaceHolder Header;
         
         /// <summary>
+        /// LocalScripts control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder LocalScripts;
+        
+        /// <summary>
         /// body control.
         /// </summary>
         /// <remarks>
@@ -110,5 +119,14 @@ namespace WebUI {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::WebUI.Controls.FooterBar Footer;
+        
+        /// <summary>
+        /// FooterScripts control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder FooterScripts;
     }
 }

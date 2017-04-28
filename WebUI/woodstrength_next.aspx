@@ -6,106 +6,69 @@
     <ui:SubNavigationBar id="SubNavigationBar1" runat="server" />
 </asp:Content>
 
-<asp:Content ID="Content3" ContentPlaceHolderID="Header" runat="server">
+<asp:Content ID="Content99" ContentPlaceHolderID="Header" runat="server">
+    <script type="text/javascript">
 
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script> 
-    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        function toInteger(number) {
+            return Math.round(  // round to nearest integer
+                Number(number)    // type cast your input
+            );
+        };
 
-    <script type="text/javascript" language="javascript">
-    (function ($) {
-        $.fn.animate_progressbar = function (value, duration, easing, complete) {
-            if (value == null) value = 0;
-            if (duration == null) duration = 1000;
-            if (easing == null) easing = 'swing';
-            if (complete == null) complete = function () { };
-            var progress = this.find('.ui-progressbar-value');
-            progress.stop(true).animate({
-                width: value + '%'
-            }, duration, easing, function () {
-                if (value >= 99.5) {
-                    progress.addClass('ui-corner-right');
-                } else {
-                    progress.removeClass('ui-corner-right');
-                }
-                complete();
-            });
+        function animate(elem, percentage)
+        {
+            var interval = 1;
+            var updatesPerSecond = 1000 / 60;
+            var max = 100;
+
+            if (!elem) {
+                // alert("Elem is null!");
+                return;
+            }
+            var val = toInteger(elem.getAttribute("value"));
+
+            if (val < percentage && val < max) {
+                val = val + interval;
+                elem.setAttribute("value", val);
+                setTimeout(animate, updatesPerSecond, elem, percentage);
+            }
+
         }
-    })(jQuery);
 
-    function toInteger(number) {
-        return Math.round(Number(number));
-    }
+        $(document).ready(function () {
 
-        //$(document.ready(function () {
+            // Grab each progress bar and update it.
+            var updatesPerSecond = 2000;
 
-        //    //=== For each MOR div.
+            var items = document.querySelectorAll("progress");
 
-        //    $(".progress").each(function (i, n) {
+            for (var i = 0; i < items.length; i++)
+            {
+                var item = items[i];
+                var percentage = toInteger(item.getAttribute("data-value")) / 1000;
+                console.log(item.getAttribute("id"));
 
-        //        //=== Get the ID and the MOR value.
+                animate(item, percentage);
 
-        //        var idSelector = "#" + n.getAttribute("id");
-        //        var dataValue = n.getAttribute("data-value");
-        //        var percentageDataValue = toInteger(n.getAttribute("data-value") / 1000);  // To derive a percentage.
+                setTimeout(animate, 2000);
+            }
 
-        //        //=== Now, create a progress bar on that div and animate the fill up to the value..
+            //if (items)
+            //{
+            //    alert(items.length);
+            //}
+            //$('.progress').each(function (index, elem) {
 
-        //        //this.progressbar({ value: 1 });
-        //        //this.animate_progressbar(percentageDataValue, 1000);
+            //    var percent = toInteger(elem.getAttribute("data-value") / 1000);
+            //    animate(elem, percent);
 
-        //        //$(idSelector).progressbar({ value: 1 });
-        //        $(idSelector).progressbar({ value: 1 }).children("span").appendTo(this);
-        //        $(idSelector).animate_progressbar(percentageDataValue, 1000);
-
-        //});
-
-    $(function () {
-
-        //=== For each MOR div.
-
-        $(".progress").each(function (i, n) {
-
-            //=== Get the ID and the MOR value.
-
-            var idSelector = "#" + n.getAttribute("id");
-            var dataValue = n.getAttribute("data-value");
-            var percentageDataValue = toInteger(n.getAttribute("data-value") / 1000);  // To derive a percentage.
-
-            //=== Now, create a progress bar on that div and animate the fill up to the value..
-
-            //this.progressbar({ value: 1 });
-            //this.animate_progressbar(percentageDataValue, 1000);
-
-            //$(idSelector).progressbar({ value: 1 });
-            $(idSelector).progressbar({ value: 1 }).children("span").appendTo(this);
-            $(idSelector).animate_progressbar(percentageDataValue, 5000);
+            //   // setTimeout(animator, 1000);
+             
+            //});
 
         });
-    })
-</script>
-<style type="text/css">
-
-    .progress{margin-bottom: 10px;}
-    .progress[aria-valuenow="0"] span {margin-bottom:30px;}
-    .progress.ui-progressbar {position:relative;height:2em;}
-    .progress span {position:static;margin-top:-2em;text-align:left;display:block;line-height:2em;padding-left:10px;padding-right:10px;}
-
-    /*.progressBarLabel {
-    position: absolute;
-    width: 100%;
-    float: left;
-    line-height: 200%;
-}
-
-    .progressBar {
-    width: 80%;
-    text-align: center;
-    margin-top:10px;*/
-}
-</style>
+    </script>
 </asp:Content>
-
 <asp:Content ID="Content1" ContentPlaceHolderID="Content" runat="server">
     
 <div id="mainWithSideBar">
@@ -129,30 +92,18 @@
                 
             %>
 
-            
+                <div>
+                <progress class="progress" style="width:90%" id="<%= row["FilterEntry_id"] %>" max="100" data-value="<%= row["mor"].ToString()%>" value="0"></progress>
+</div>
+<%--            
                 <div id="<%= row["FilterEntry_id"] %>" class="progress" data-value="<%= row["mor"].ToString() %>">  
                     <span><a href="<%= link %>"><%= linkText  %></a></span>
-                </div>
+                </div>--%>
                 
            
                 <%
         }
-%>
-
-
-<%--            <asp:Repeater ID="SpecieRepeater" runat="server">
-                <ItemTemplate>
-                    <li>
-                    <div style="width:<%#(((BusinessTier.DataAccessLayer.Species.speciesRow)Container.DataItem).mor/47+100).ToString("N0") %>px;" class="chartBar">
-                        <a href="products.aspx?FilterstoAdd=<%#((BusinessTier.DataAccessLayer.Species.speciesRow)Container.DataItem).FilterEntry_id.ToString("N0")%>" class="chartLink" >
-                        <%#((BusinessTier.DataAccessLayer.Species.speciesRow)Container.DataItem).species_description.ToString() %>
-                        <%#((BusinessTier.DataAccessLayer.Species.speciesRow)Container.DataItem).mor.ToString("N0") %> psi
-                        </a>
-                    </div>
-                    </li>
-                </ItemTemplate>
-            </asp:Repeater>--%>
-            
+%>            
         
     <p><sup>(1)</sup> The Wood Handbook - Wood as an engineering material, USDA, General Technical Report 113.</p>
     </div> <!-- end strength-page -->
