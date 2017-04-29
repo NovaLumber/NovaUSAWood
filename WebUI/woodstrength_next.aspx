@@ -7,6 +7,17 @@
 </asp:Content>
 
 <asp:Content ID="Content99" ContentPlaceHolderID="Header" runat="server">
+    <style>
+
+        progress {
+            width:80%;
+            border-radius: 3px;
+            background-color:ghostwhite;     
+            color: tan;
+            height: 20px;
+            margin-bottom: 10px;
+        }
+    </style>
     <script type="text/javascript">
 
         function toInteger(number) {
@@ -27,10 +38,12 @@
             }
             var val = toInteger(elem.getAttribute("value"));
 
-            if (val < percentage && val < max) {
+            if (val < percentage) {
                 val = val + interval;
                 elem.setAttribute("value", val);
                 setTimeout(animate, updatesPerSecond, elem, percentage);
+            } else {
+                setTimeout(animate, 5000);
             }
 
         }
@@ -38,6 +51,7 @@
         $(document).ready(function () {
 
             // Grab each progress bar and update it.
+
             var updatesPerSecond = 2000;
 
             var items = document.querySelectorAll("progress");
@@ -45,26 +59,13 @@
             for (var i = 0; i < items.length; i++)
             {
                 var item = items[i];
-                var percentage = toInteger(item.getAttribute("data-value")) / 1000;
-                console.log(item.getAttribute("id"));
-
+                var percentage = toInteger(item.getAttribute("data-value") / 1000);
+                
                 animate(item, percentage);
-
-                setTimeout(animate, 2000);
+                window.setInterval(function () {
+                    console.log("Interval set called.");
+                }, 1000);
             }
-
-            //if (items)
-            //{
-            //    alert(items.length);
-            //}
-            //$('.progress').each(function (index, elem) {
-
-            //    var percent = toInteger(elem.getAttribute("data-value") / 1000);
-            //    animate(elem, percent);
-
-            //   // setTimeout(animator, 1000);
-             
-            //});
 
         });
     </script>
@@ -93,7 +94,7 @@
             %>
 
                 <div>
-                <progress class="progress" style="width:90%" id="<%= row["FilterEntry_id"] %>" max="100" data-value="<%= row["mor"].ToString()%>" value="0"></progress>
+                <progress id="<%= row["FilterEntry_id"] %>" max="100" data-value="<%= row["mor"].ToString()%>" value="0"></progress>
 </div>
 <%--            
                 <div id="<%= row["FilterEntry_id"] %>" class="progress" data-value="<%= row["mor"].ToString() %>">  
