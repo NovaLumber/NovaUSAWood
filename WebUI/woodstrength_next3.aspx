@@ -1,4 +1,4 @@
-﻿<%@ Page EnableViewState="false" EnableSessionState="ReadOnly" Language="C#" MasterPageFile="~/UiMasterPage.Master" AutoEventWireup="true"  CodeBehind="woodstrenth_next2.aspx.cs" Inherits="WebUI.woodstrenth_next2" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/UiMasterPage.Master" AutoEventWireup="true" CodeFile="woodstrength_next3.aspx.cs" Inherits="WebUI.woodstrength_next3" %>
 <%@ Import Namespace="System.Data" %> 
 <%@ Import Namespace="BusinessTier.DataAccessLayer" %> 
 
@@ -51,10 +51,10 @@
                 var targetPercentageValue = toInteger(elem.getAttribute("data-value") / 1000) + 30;
                 var width = targetPercentageValue + "%";
 
-                $(selector).animate({ "width": width }, 100, function () { i += 1; sequenced_animate();});
+                $(selector).animate({ "width": width }, 100, function () { i += 1; sequenced_animate(); });
 
             }
-         });
+        });
 
     </script>
 </asp:Content>
@@ -64,7 +64,6 @@
     <div id="strength-page">
     <h1>Modulus of Rupture (MOR) Ratings for Various Species of Wood (psi)</h1>
     <p>The modulus of rupture is a measure of the maximum load carrying capacity of a given species in bending strength and is proportional to the breaking point or maximum strength as borne by the specimen.<sup>(1)</sup></p>
-
             <% 
 
                 // Get the data from the database.
@@ -79,7 +78,7 @@
 
                     string link = "products.aspx?FiltersToAdd=" + row["FilterEntry_id"].ToString();
                     string linkText = row["species_description"].ToString() + " " + row["mor"].ToString() + " psi";
-                    string href = "<a href=" + '"' + link + '"' + "class=" + '"' + "link-text" + '"' + " style=" + '"' + "font-weight:normal;" + '"' + ">" + linkText + "</a>";
+                    string href = "<a href=" + '"' + link + '"' + ">" + linkText + "</a>";
             %>
 
         <div class="progress" style="width:100%;">
@@ -87,7 +86,6 @@
                 <span class="link-text"><%=href%></span>
             </div>
         </div>
-
            
                 <%
         }
@@ -99,4 +97,5 @@
 </div><!-- end mainWithSideBar -->
 
 </asp:Content>
+
 
