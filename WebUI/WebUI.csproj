@@ -941,13 +941,6 @@
     <Compile Include="woodstrength.aspx.designer.cs">
       <DependentUpon>woodstrength.aspx</DependentUpon>
     </Compile>
-    <Compile Include="woodstrength_final.aspx.cs">
-      <DependentUpon>woodstrength_final.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="woodstrength_final.aspx.designer.cs">
-      <DependentUpon>woodstrength_final.aspx</DependentUpon>
-    </Compile>
     <Compile Include="woodstrength_next.aspx.cs">
       <DependentUpon>woodstrength_next.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -955,12 +948,12 @@
     <Compile Include="woodstrength_next.aspx.designer.cs">
       <DependentUpon>woodstrength_next.aspx</DependentUpon>
     </Compile>
-    <Compile Include="woodstrength_next3.aspx.cs">
-      <DependentUpon>woodstrength_next3.aspx</DependentUpon>
+    <Compile Include="woodstrength_final.aspx.cs">
+      <DependentUpon>woodstrength_final.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="woodstrength_next3.aspx.designer.cs">
-      <DependentUpon>woodstrength_next3.aspx</DependentUpon>
+    <Compile Include="woodstrength_final.aspx.designer.cs">
+      <DependentUpon>woodstrength_final.aspx</DependentUpon>
     </Compile>
     <Compile Include="woodstrenth_next2.aspx.cs">
       <DependentUpon>woodstrenth_next2.aspx</DependentUpon>
@@ -4055,9 +4048,8 @@
     <Content Include="woodhardness.aspx" />
     <Content Include="woodstiffness.aspx" />
     <Content Include="woodstrength.aspx" />
-    <Content Include="woodstrength_final.aspx" />
     <Content Include="woodstrength_next.aspx" />
-    <Content Include="woodstrength_next3.aspx" />
+    <Content Include="woodstrength_final.aspx" />
     <Content Include="woodstrenth_next2.aspx" />
     <Content Include="WoodTypes.aspx" />
   </ItemGroup>

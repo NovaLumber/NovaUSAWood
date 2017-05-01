@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/UiMasterPage.Master" AutoEventWireup="true" CodeFile="woodstrength_next3.aspx.cs" Inherits="WebUI.woodstrength_next3" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/UiMasterPage.Master" AutoEventWireup="true" CodeFile="woodstrength_final.aspx.cs" Inherits="WebUI.woodstrength_final" %>
 <%@ Import Namespace="System.Data" %> 
 <%@ Import Namespace="BusinessTier.DataAccessLayer" %> 
 
@@ -51,7 +51,7 @@
                 var targetPercentageValue = toInteger(elem.getAttribute("data-value") / 1000) + 30;
                 var width = targetPercentageValue + "%";
 
-                $(selector).animate({ "width": width }, 100, function () { i += 1; sequenced_animate(); });
+                $(selector).animate({ "width": width }, 500, function () { i += 1; sequenced_animate(); });
 
             }
         });
@@ -78,7 +78,7 @@
 
                     string link = "products.aspx?FiltersToAdd=" + row["FilterEntry_id"].ToString();
                     string linkText = row["species_description"].ToString() + " " + row["mor"].ToString() + " psi";
-                    string href = "<a href=" + '"' + link + '"' + ">" + linkText + "</a>";
+                    string href = "<a href=" + '"' + link + '"' + "class=" + '"' + "link-text" + '"' + " style=" + '"' + "font-weight:normal;" + '"' + ">" + linkText + "</a>";
             %>
 
         <div class="progress" style="width:100%;">

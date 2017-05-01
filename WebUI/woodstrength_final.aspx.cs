@@ -12,7 +12,7 @@ using BusinessTier.DataAccessLayer;
 
 namespace WebUI
 {
-    public partial class woodstrength_next3 : System.Web.UI.Page
+    public partial class woodstrength_final : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
