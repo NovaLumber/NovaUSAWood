@@ -8,15 +8,27 @@
 
 <asp:Content ID="Content99" ContentPlaceHolderID="Header" runat="server">
     <style>
+            .progressBarLinkText{
+                font-family:'Verdana';
+                font-size: small;
+            }
 
-        progress {
-            width:80%;
-            border-radius: 3px;
-            background-color:ghostwhite;     
-            color: tan;
-            height: 20px;
-            margin-bottom: 10px;
-        }
+            .progressBarContainer {
+                width: 80%;
+                border-radius:3px;
+                background-color: ghostwhite;
+            }
+                      
+            .progressBar {
+                width: 1%;
+                height: 30px;
+                line-height: 30px;
+                border-radius:3px;
+                background-color: tan;
+                white-space:nowrap;
+                margin-bottom: 10px;
+            }
+
     </style>
     <script type="text/javascript">
 
@@ -26,48 +38,49 @@
             );
         };
 
-        function animate(elem, percentage)
-        {
-            var interval = 1;
-            var updatesPerSecond = 1000 / 60;
-            var max = 100;
-
-            if (!elem) {
-                // alert("Elem is null!");
-                return;
-            }
-            var val = toInteger(elem.getAttribute("value"));
-
-            if (val < percentage) {
-                val = val + interval;
-                elem.setAttribute("value", val);
-                setTimeout(animate, updatesPerSecond, elem, percentage);
-            } else {
-                setTimeout(animate, 5000);
-            }
-
-        }
-
         $(document).ready(function () {
 
-            // Grab each progress bar and update it.
+            var progressBars = document.querySelectorAll(".progressBar");
 
-            var updatesPerSecond = 2000;
+            $(".progressBar").each(function (index, elem) {
 
-            var items = document.querySelectorAll("progress");
+                // Set the data-percent-target attribute to the target percentage.
 
-            for (var i = 0; i < items.length; i++)
-            {
-                var item = items[i];
-                var percentage = toInteger(item.getAttribute("data-value") / 1000);
-                
-                animate(item, percentage);
-                window.setInterval(function () {
-                    console.log("Interval set called.");
-                }, 1000);
-            }
+                var targetValue = (elem.getAttribute("data-value") / 1000);
+                var speed = 16;
+                var increment = 1;
+
+                animateProgressBar(elem, targetValue, increment, speed);
+
+            });
 
         });
+
+        function animateProgressBar(elem, targetValue, increment, speed)
+        {
+            // Get the width of the containing div.
+
+            var width = 1;
+            var id = setInterval(frame, speed);
+
+            function frame()
+            {
+                var currentValue = toInteger(elem.getAttribute("data-percent-target"));
+
+                if (currentValue < targetValue) {
+                    currentValue = currentValue + increment;
+                    elem.setAttribute("data-percent-target", currentValue++);
+                    width++;
+                    elem.style.width = width + '%';
+                }
+                else {
+                    // THIS IS  HACK TO MOVE THE PROGRESS BAR FURTHER ALONG SOLELY FOR EFFECT.
+
+                    clearInterval(id);
+                }
+            }
+        }
+        
     </script>
 </asp:Content>
 <asp:Content ID="Content1" ContentPlaceHolderID="Content" runat="server">
@@ -90,17 +103,11 @@
 
                     string link = "products.aspx?FiltersToAdd=" + row["FilterEntry_id"].ToString();
                     string linkText = row["species_description"].ToString() + " " + row["mor"].ToString() + " psi";
-                
+                    string href = "<a href=" + '"' + link + '"' + ">" + linkText + "</a>";
             %>
-
-                <div>
-                <progress id="<%= row["FilterEntry_id"] %>" max="100" data-value="<%= row["mor"].ToString()%>" value="0"></progress>
-</div>
-<%--            
-                <div id="<%= row["FilterEntry_id"] %>" class="progress" data-value="<%= row["mor"].ToString() %>">  
-                    <span><a href="<%= link %>"><%= linkText  %></a></span>
-                </div>--%>
-                
+        <div class="progressBarContainer">
+            <div class="progressBar" id="<%= row["FilterEntry_id"] %>" data-value="<%= row["mor"].ToString()%>" data-percent-target="0"><span class="progressBarLinkText" style="padding-left: 15px"><%=href%></span></div>
+        </div>
            
                 <%
         }

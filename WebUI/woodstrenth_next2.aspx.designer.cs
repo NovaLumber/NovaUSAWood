@@ -11,5 +11,14 @@ namespace WebUI {
     
     
     public partial class woodstrenth_next2 {
+        
+        /// <summary>
+        /// SubNavigationBar1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::WebUI.Controls.SubNavigationBar SubNavigationBar1;
     }
 }
